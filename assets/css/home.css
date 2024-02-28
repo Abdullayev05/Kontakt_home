@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #807e7ed8;
+    height: 70px;
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.sebet_account_icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .holo {
+    font-size: 50px;
+}
+
+.kataloq {
+    height: 48px;
+    width: 110px;
+    background-color: #F58634;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_div {
+    height: 48px;
+    width: 500px;
+    border-radius: 30px;
+    background-color: #F6F6F6;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.input_div input {
+    outline: none;
+    border: 0;
+    width: 500px;
+    padding-left: 20px;
+    border-radius: 30px;
+    background-color: #F6F6F6;
+}
+
+.input_div button {
+    border: 0;
+    width: 38px;
+    height: 38px;
+    color: white;
+    background-color: #F58634;
+    border-radius: 50%;
+}
+
+.sebet_user_icon {
+    display: flex;
+    gap: 10px;
+}
+
+.sebet_user_icon i {
+    font-size: 16px;
+    color: #292D32;
+}
+
+.sebet_user_icon span {
+    display: flex;
+    gap: 10px;
+}
+
+.sebet_user_icon a {
+    color: #292D32;
+}
+
+.sebet_user_icon {
+    display: flex;
+    gap: 20px;
+}
+
+#two_section {
+    padding-top: 150px;
+}
+
+#two_section img {
+    width: 199px;
+    height: 200px;
+}
+
+.card {
+    width: 280px;
+    height: 391px;
+    border-radius: 4px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2D2D;
+}
+
+.card img {
+    margin: 0 auto;
+}
+
+.card .h3_sss {
+    display: flex;
+    padding-top: 20px;
+}
+
+.h3_sss h3 {
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.text_dec {
+    text-decoration: line-through;
+}
+
+.btn {
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    margin-top: 10px;
+    gap: 15px;
+    margin-top: 20px;
+    background-color: #FDEEE2;
+}
+
+.btn:hover h5 {
+    color: #f0e6e6;
+}
+
+.btn:hover h4 {
+    color: #f0e6e6;
+}
+
+.btn h5 {
+    font-weight: 900;
+    color: #FF0000;
+    font-size: 18px;
+}
+
+.btn h4 {
+    color: #2D2D2D;
+    font-size: 18px;
+}
+
+.card .one_price {
+    color: #FF0000;
+}
+
+.catdirilma {
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid rgb(122, 209, 122);
+}
+
+.catdirilma a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #009E36;
+}
+
+.catdirilma i {
+    color: #009E36;
+}
+
+footer {
+    height: 500px;
+    background-color: #fcfafa;
+    margin-top: 100px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.one_footer_words {
+    display: flex;
+    flex-direction: column;
+}
+
+.one_footer_words h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000000;
+}
+
+.one_footer_words span {
+    font-size: 12px;
+    font-weight: 300;
+    color: #2D2D2D;
+    padding-top: 20px;
+}
+
+.one_footer_words .unvan {
+    width: 150px;
+    line-height: 14px;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.icons_div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EFEFEF;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.icons_div i {
+    font-size: 17px;
+    color: #000000;
+
+}
+
+.spans {
+    display: flex;
+    flex-direction: column;
+}
+
+.katagoriya {
+    display: flex;
+    flex-direction: column;
+}
+
+.katagoriya a {
+    color: #000000;
+    line-height: 25px;
+}
+
+.katagoriya h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000000;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
