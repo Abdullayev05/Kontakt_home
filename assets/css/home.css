@@ -36,6 +36,16 @@ header ul {
 header .holo {
     font-size: 50px;
 }
+/* 
+#first_section img {
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+} */
+
+.swiper-slide {
+    width: 400px;
+}
 
 .kataloq {
     height: 48px;
@@ -306,6 +316,11 @@ footer .container {
 .katagoriya a {
     color: #000000;
     line-height: 25px;
+}
+
+.katagoriya a:hover {
+    color: #F58634;
+    transition: 0.5s;
 }
 
 .katagoriya h3 {
