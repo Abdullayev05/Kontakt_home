@@ -147,3 +147,32 @@
     font-size: 16px;
     font-weight: 300;
 }
+
+.second_section h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.xüsusiyyətlər {
+    padding-top: 50px;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #777;
+    width: 800px;
+}
+
+.infos span {
+    font-size: 16px;
+    font-weight: 300;
+}
