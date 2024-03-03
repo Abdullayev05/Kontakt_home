@@ -39,12 +39,9 @@ header .holo {
     font-size: 50px;
 }
 
-/* 
-#first_section img {
-    width: 1000px;
-    height: 700px;
-    margin: 0 auto;
-} */
+ #first_section img {
+    height: 650px;
+} 
 
 .swiper-slide {
     width: 400px;
