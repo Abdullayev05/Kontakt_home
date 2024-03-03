@@ -15,9 +15,14 @@
 
 .card {
     width: 380px;
-    height: 380px;
+    height: 350px;
     border-radius: 4px;
     border: 1px solid #EDEDED;
+}
+
+.card img {
+    width: 223px;
+    height: 254px;
 }
 
 .first_section {
@@ -29,11 +34,6 @@
 .first_section .container {
     display: flex;
     gap: 50px;
-}
-
-.card img {
-    width: 283px;
-    height: 284px;
 }
 
 .img_div {
@@ -104,11 +104,17 @@
     border-radius: 4px;
     border: 1px solid #F58634;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .gb_button_div {
     display: flex;
     gap: 20px;
+}
+
+.gb_button_div .two_btn {
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7;
 }
 
 .span_icon {
@@ -123,6 +129,14 @@
 .span_icon .heart_libra_icon {
     display: flex;
     gap: 20px;
+}
+
+.heart_libra_icon i {
+    cursor: pointer;
+}
+
+.red-heart.clicked {
+    color: red;
 }
 
 .div_span {
@@ -169,10 +183,367 @@
     line-height: 20px;
     letter-spacing: -0.02em;
     color: #777;
-    width: 800px;
+    width: 700px;
 }
 
 .infos span {
     font-size: 16px;
     font-weight: 300;
+}
+
+.three_section {
+    margin-top: 50px;
+}
+
+.meshul_deyer {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.meshul_deyer h3 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0em;
+}
+
+.icon_h3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon_h3 h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.serh {
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    height: 130px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    width: 700px;
+    padding-top: 30px;
+    line-height: 20px;
+}
+
+.serh p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.men_star {
+    display: flex;
+    justify-content: space-between;
+}
+
+.men_star span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.yorumlar {
+    display: flex;
+    gap: 20px;
+}
+
+.serh h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.serh span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #A4A4A4;
+}
+
+.inputs_div {
+    padding-top: 50px;
+}
+
+.inputs_div h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2D2D2D;
+}
+
+.left_input {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.left_input input {
+    width: 300px;
+    height: 43px;
+    border-radius: 4px;
+    border: 1px solid #CDCDCD;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.large_input {
+    width: 370px;
+    height: 106px;
+    border-radius: 4px;
+    border: 1px solid #CDCDCD;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.large_input_div {
+    padding-top: 30px;
+}
+
+.star_button {
+    display: flex;
+    justify-content: flex-end;
+    width: 700px;
+    align-items: center;
+    gap: 50px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.star_button button {
+    font-size: 16px;
+    font-weight: 500;
+    width: 169px;
+    height: 41px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 0;
+    color: #F6F6F6;
+    background-color: #F58634;
+    cursor: pointer;
+}
+
+.black {
+    width: 280px;
+    height: 243px;
+    background-color: #393939;
+    border-radius: 4px;
+    color: #EDEDED;
+    line-height: 30px;
+    padding: 16px;
+}
+
+.black .orange_btn {
+    width: 240px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #F58634;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+}
+
+.black h3 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.black span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.black .white_btn {
+    width: 240px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #F58634;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+}
+
+.org_wht_btn {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.black h4 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: line-through;
+}
+
+.middle_white {
+    width: 280px;
+    height: 153px;
+    background-color: #f1eded6b;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 16px;
+}
+
+.middle_white span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2D2D;
+}
+
+.middle_white button {
+    width: 240px;
+    height: 43px;
+    border-radius: 4px;
+    background-color: #e2dfdf;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2D2D;
+    border: 0;
+    cursor: pointer;
+}
+
+.down_white {
+    width: 280px;
+    height: 241px;
+    background-color: #f1eded6b;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 16px;
+}
+
+.down_white h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2D2D;
+}
+
+.down_white .kredit_kart {
+    width: 240px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #E7E7E7;
+}
+
+.down_white img {
+    width: 22px;
+    height: 15px;
+    transform: rotate(90deg);
+}
+
+.kredit_kart h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2D2D2D;
+}
+
+.kredit_kart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.kredit_ayi {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.range {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.range input {
+    width: 200px;
+}
+
+#krediAy {
+    accent-color: #F58634;
+}
+
+.kredit_ayi output {
+    font-size: 17px;
+    font-weight: 300;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F58634;
+}
+
+.qiymet {
+    display: flex;
+    gap: 10px;
+    width: 115px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #F6F6F6;
+    background-color: #e2dfdf;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.qiymet span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2D2D2DB2;
+}
+
+.qiymet_sifaris button {
+    width: 115px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2FA71C;
+    border-radius: 4px;
+    border: 1px solid #169F00;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.qiymet_sifaris {
+    display: flex;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 320px) {
+    
 }
