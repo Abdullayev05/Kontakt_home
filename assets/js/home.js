@@ -17,11 +17,28 @@ function togglePopUp() {
     var popUp = document.getElementById("popUp");
     popUp.classList.toggle("active");
 }
-
 document.getElementById("closeIcon").addEventListener("click", function () {
     document.querySelector(".pop_up").style.display = "none";
-});
-
+})
 function toggleRedHeart(event) {
+    event.preventDefault();
+}
+function togglePasswordVisibility(event) {
+    event.preventDefault();
+    let passwordField = document.getElementById("password");
+    let toggleButton = document.getElementById("toggleButton");
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleButton.textContent = "Hide";
+    } else {
+        passwordField.type = "password";
+        toggleButton.textContent = "Show";
+    }
+}
+function login(event) {
+    event.preventDefault();
+}
+
+function signUp(event) {
     event.preventDefault();
 }
