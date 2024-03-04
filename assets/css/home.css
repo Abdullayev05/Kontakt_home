@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:700|Poppins&display=swap');
 
 * {
     margin: 0;
@@ -19,6 +20,8 @@ header {
     background-color: #807e7ed8;
     height: 70px;
     width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 header ul {
@@ -28,20 +31,147 @@ header ul {
     justify-content: space-between;
 }
 
+.pop_up {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+    background-color: #dde1e2;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.pop_up.active {
+    display: block;
+}
+
+.pop_up.active {
+    display: block;
+}
+
+.pop_up h3 {
+    font-family: "Kalam", sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+}
+
+.login_btn {
+    border: 0;
+    background-color: transparent;
+    
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.yadda_saxla {
+    width: 350px;
+    height: 40px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.cixis_icon {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.cixis_icon i {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #0056b3;
+}
+
+#closeIcon {
+    color: white;
+}
+
+.login_sign button {
+    width: 173px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    background-color: #9b9ea1;
+}
+
+.qeydiyyat_btn {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 .sebet_account_icon {
     display: flex;
     justify-content: space-between;
 }
+
 .red-heart.clicked {
     color: red;
 }
+
 header .holo {
     font-size: 50px;
+    color: #000000;
 }
 
- #first_section img {
+#first_section {
+    padding-top: 70px;
+}
+
+#first_section img {
     height: 650px;
-} 
+    object-fit: cover;
+    background-position: center;
+}
 
 .swiper-slide {
     width: 400px;
@@ -187,7 +317,7 @@ header .holo {
     text-decoration: line-through;
 }
 
-.btn {
+.ay_date {
     width: 250px;
     height: 30px;
     border-radius: 4px;
@@ -201,21 +331,13 @@ header .holo {
     background-color: #FDEEE2;
 }
 
-.btn:hover h5 {
-    color: #f0e6e6;
-}
-
-.btn:hover h4 {
-    color: #f0e6e6;
-}
-
-.btn h5 {
+.ay_date h5 {
     font-weight: 900;
     color: #FF0000;
     font-size: 18px;
 }
 
-.btn h4 {
+.ay_date h4 {
     color: #2D2D2D;
     font-size: 18px;
 }
@@ -327,11 +449,11 @@ footer .container {
 .katagoriya a:hover {
     color: #F58634;
     transition: 0.5s;
-    text-decoration: none; 
-    background-image: linear-gradient(to right, red, yellow); 
-    background-size: 100% 2px; 
-    background-position: 0 100%; 
-    background-repeat: no-repeat; 
+    text-decoration: none;
+    background-image: linear-gradient(to right, red, yellow);
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
 }
 
 .katagoriya h3 {

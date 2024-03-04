@@ -13,6 +13,129 @@
     margin: 0 auto;
 }
 
+header {
+    background-color: #807e7ed8;
+    height: 70px;
+    width: 100%;
+    z-index: 999;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.sebet_account_icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.red-heart.clicked {
+    color: red;
+}
+
+header .holo {
+    font-size: 50px;
+}
+
+.kataloq {
+    height: 48px;
+    width: 110px;
+    background-color: #F58634;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_div {
+    height: 48px;
+    width: 500px;
+    border-radius: 30px;
+    background-color: #F6F6F6;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.input_div input {
+    outline: none;
+    border: 0;
+    width: 500px;
+    padding-left: 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #F6F6F6;
+}
+
+.input_div button {
+    border: 0;
+    width: 38px;
+    height: 38px;
+    color: white;
+    background-color: #F58634;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    width: 335px;
+}
+
+.nvbr_click_div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.dropdown-menu img {
+    width: 27.57px;
+    height: 37.84px;
+}
+
+.dropdown-menu span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dropdown-menu button {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.sebet_user_icon {
+    display: flex;
+    gap: 10px;
+}
+
+.sebet_user_icon i {
+    font-size: 16px;
+    color: #292D32;
+}
+
+.sebet_user_icon span {
+    display: flex;
+    gap: 10px;
+}
+
+.sebet_user_icon a {
+    color: #292D32;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sebet_user_icon {
+    display: flex;
+    gap: 20px;
+}
+
 .card {
     width: 380px;
     height: 350px;
@@ -21,7 +144,7 @@
 }
 
 .card img {
-    width: 223px;
+    width: 200px;
     height: 254px;
 }
 
