@@ -321,6 +321,7 @@ header .holo {
 
 .card_icons i {
     font-size: 18px;
+    color: #323232;
 }
 
 .line {
@@ -332,8 +333,10 @@ header .holo {
 .sebet_btn button {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
-    padding-top: 15px;
+    text-align: center;
+    /* padding-top: 15px; */
     background: #f3f3f3;
     border-radius: 10px;
     height: 48px;
@@ -347,8 +350,8 @@ header .holo {
     transition: 0.5s;
 }
 
-.sebet_btn h4 {
-    font-size: 16px;
+.sebet_btn .sebet_elavet {
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.02em;
 }
@@ -367,7 +370,6 @@ header .holo {
     line-height: 12px;
     margin-bottom: 10px;
     color: #323232;
-
 }
 
 .ekran_yaddas span em {
@@ -375,7 +377,7 @@ header .holo {
     color: #323232;
 }
 
-.red-heart {
+#heart.red {
     color: #ff003c;
 }
 
@@ -387,6 +389,11 @@ header .holo {
     font-size: 16px;
     font-weight: 500;
     color: #323232;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    margin-bottom: 12px;
 }
 
 .card-title {
@@ -401,7 +408,7 @@ header .holo {
 .card .h3_sss {
     /* display: flex; */
     text-align: start;
-
+    /* align-items: flex-start; */
     padding-top: 20px;
 }
 
@@ -421,7 +428,7 @@ header .holo {
     letter-spacing: -0.02em;
 }
 
-.ay_date {
+/* .ay_date {
     width: 250px;
     height: 30px;
     border-radius: 4px;
@@ -433,9 +440,9 @@ header .holo {
     gap: 15px;
     margin-top: 20px;
     background-color: #FDEEE2;
-}
+} */
 
-.ay_date h5 {
+/* .ay_date h5 {
     font-weight: 900;
     color: #FF0000;
     font-size: 18px;
@@ -444,7 +451,7 @@ header .holo {
 .ay_date h4 {
     color: #2D2D2D;
     font-size: 18px;
-}
+} */
 
 .card .one_price {
     color: #FF0000;

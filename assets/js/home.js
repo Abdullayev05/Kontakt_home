@@ -1,12 +1,32 @@
-function toggleRedHeart() {
-    var heartIcon = document.getElementById('heartIcon');
-    if (heartIcon.classList.contains('red-heart')) {
-        heartIcon.classList.remove('red-heart');
-        heartIcon.innerHTML = '<i class="far fa-heart"></i>';
+(function () {
+    const heart = document.getElementById('heart');
+    heart.addEventListener('click', function () {
+        heart.classList.toggle('red');
+    });
+})();
+
+function togglePopUp() {
+    var popUp = document.getElementById("popUp");
+    if (popUp.style.display === "block") {
+        popUp.style.display = "none";
     } else {
-        heartIcon.classList.add('red-heart');
-        heartIcon.innerHTML = '<i class="far fa-heart" style="color: #ff003c;"></i>';
+        popUp.style.display = "block";
     }
+}
+
+// Bu funksiya üçün HTML kodundakı onclick funksiyası ilə əlaqəlidir.
+function login(event) {
+    // Bu funksiyanın istifadəsi burada göstərilmir.
+}
+
+// Bu funksiya üçün HTML kodundakı onclick funksiyası ilə əlaqəlidir.
+function signUp(event) {
+    // Bu funksiyanın istifadəsi burada göstərilmir.
+}
+
+// Bu funksiya üçün HTML kodundakı onclick funksiyası ilə əlaqəlidir.
+function togglePasswordVisibility(event) {
+    // Bu funksiyanın istifadəsi burada göstərilmir.
 }
 
 function togglePopUp() {
@@ -47,3 +67,4 @@ function login(event) {
 function signUp(event) {
     event.preventDefault();
 }
+
