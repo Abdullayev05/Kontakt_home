@@ -6,7 +6,7 @@ document.getElementById("krediAy").addEventListener("input", function () {
 document.getElementById("krediAy").addEventListener("input", function () {
   var krediAySlider = document.getElementById("krediAy");
   var krediAy = parseInt(krediAySlider.value);
-  var fiyat = 2189 / krediAy;
+  var fiyat = 2849 / krediAy;
   var fiyatGosterici = document.getElementById("fiyatGosterici");
   fiyatGosterici.textContent = fiyat.toFixed(2);
 });
@@ -52,15 +52,13 @@ function signUp(event) {
   event.preventDefault();
 }
 $('.memory-button').click(function() {
-  // Tüm butonların arka plan rengini ve kenarlık rengini varsayılan hale getir
   $('.memory-button').css({
       'background-color': '#FFFFFF',
       'border': '1px solid #E7E7E7'
   });
 
-  // Tıklanan butonun arka plan rengini ve kenarlık rengini değiştir
   $(this).css({
-      'background-color': '#b9bbbd',
+      'background-color': '#ff003c',
       'border': '1px solid #F58634'
   });
 });

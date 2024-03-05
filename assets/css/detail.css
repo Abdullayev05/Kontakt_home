@@ -44,7 +44,7 @@ header ul {
     padding: 30px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #0000001a;
     z-index: 1000;
 }
 
@@ -97,7 +97,7 @@ input[type="email"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #ff003c;
 }
 
 .input_showHide {
@@ -125,7 +125,7 @@ input[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #0056b3;
+    background-color: #ff003c;
 }
 
 #closeIcon {
@@ -139,7 +139,7 @@ input[type="submit"]:hover {
     border: 0;
     color: #fff;
     font-size: 17px;
-    background-color: #0056b3;
+    background-color: #ff003c;
 }
 
 .input_showHide input {
@@ -156,7 +156,7 @@ input[type="submit"]:hover {
     border-radius: 5px;
     color: #fff;
     font-size: 17px;
-    background-color: #0056b3;
+    background-color: #ff003c;
 }
 
 .qeydiyyat_btn {
@@ -166,7 +166,7 @@ input[type="submit"]:hover {
 }
 
 .red-heart.clicked {
-    color: red;
+    color: #ff003c;
 }
 
 header .holo {
@@ -176,7 +176,7 @@ header .holo {
 .kataloq {
     height: 48px;
     width: 110px;
-    background-color: #F58634;
+    background-color: #ff003c;
     border-radius: 10px;
     border: 0;
     color: white;
@@ -212,7 +212,7 @@ header .holo {
     width: 38px;
     height: 38px;
     color: white;
-    background-color: #F58634;
+    background-color: #ff003c;
     border-radius: 50%;
 }
 
@@ -271,9 +271,10 @@ header .holo {
 
 .card {
     width: 380px;
-    height: 350px;
+    height: 370px;
     border-radius: 4px;
     border: 1px solid #EDEDED;
+    margin: 0 auto;
 }
 
 .card img {
@@ -358,7 +359,7 @@ header .holo {
     width: 60px;
     height: 30px;
     border-radius: 4px;
-    border: 1px solid #F58634;
+    border: 1px solid #ff003c;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -369,13 +370,13 @@ header .holo {
 }
 
 .gb_button_div .two_btn {
-    background-color: #FFFFFF;
+    background-color: #ff003c;
     border: 1px solid #E7E7E7;
     font-size: 13px;
 }
 
 #gb128 {
-    background-color: #b9bbbd;
+    background-color: #ff003c;
     font-size: 13px;
 }
 
@@ -398,7 +399,7 @@ header .holo {
 }
 
 .red-heart.clicked {
-    color: red;
+    color: #ff003c;
 }
 
 .div_span {
@@ -601,7 +602,7 @@ header .holo {
     border-radius: 4px;
     border: 0;
     color: #F6F6F6;
-    background-color: #F58634;
+    background-color: #ff003c;
     cursor: pointer;
 }
 
@@ -619,7 +620,7 @@ header .holo {
     width: 240px;
     height: 45px;
     border-radius: 4px;
-    background-color: #F58634;
+    background-color: #ff003c;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
@@ -643,7 +644,7 @@ header .holo {
     height: 45px;
     border-radius: 4px;
     background-color: #FFFFFF;
-    color: #F58634;
+    color: #ff003c;
     font-size: 16px;
     font-weight: 500;
     border: 0;
@@ -754,7 +755,7 @@ header .holo {
 }
 
 #krediAy {
-    accent-color: #F58634;
+    accent-color: #ff003c;
 }
 
 .kredit_ayi output {
@@ -767,7 +768,7 @@ header .holo {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F58634;
+    background-color: #ff003c;
 }
 
 .qiymet {

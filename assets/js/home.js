@@ -1,7 +1,12 @@
-function toggleRedHeart(event) {
-    event.preventDefault();
-    var icon = event.currentTarget.querySelector('.fa-heart');
-    icon.classList.toggle('clicked');
+function toggleRedHeart() {
+    var heartIcon = document.getElementById('heartIcon');
+    if (heartIcon.classList.contains('red-heart')) {
+        heartIcon.classList.remove('red-heart');
+        heartIcon.innerHTML = '<i class="far fa-heart"></i>';
+    } else {
+        heartIcon.classList.add('red-heart');
+        heartIcon.innerHTML = '<i class="far fa-heart" style="color: #ff003c;"></i>';
+    }
 }
 
 function togglePopUp() {
