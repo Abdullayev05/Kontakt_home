@@ -5,29 +5,14 @@
     });
 })();
 
-function togglePopUp() {
-    var popUp = document.getElementById("popUp");
-    if (popUp.style.display === "block") {
-        popUp.style.display = "none";
-    } else {
-        popUp.style.display = "block";
-    }
-}
+document.addEventListener("DOMContentLoaded", function () {
+    var heartIcon = document.querySelector('.red-heart');
+    var popUp = document.getElementById('popUp');
 
-// Bu funksiya üçün HTML kodundakı onclick funksiyası ilə əlaqəlidir.
-function login(event) {
-    // Bu funksiyanın istifadəsi burada göstərilmir.
-}
-
-// Bu funksiya üçün HTML kodundakı onclick funksiyası ilə əlaqəlidir.
-function signUp(event) {
-    // Bu funksiyanın istifadəsi burada göstərilmir.
-}
-
-// Bu funksiya üçün HTML kodundakı onclick funksiyası ilə əlaqəlidir.
-function togglePasswordVisibility(event) {
-    // Bu funksiyanın istifadəsi burada göstərilmir.
-}
+    heartIcon.addEventListener('click', function () {
+        popUp.style.display = 'block';
+    });
+});
 
 function togglePopUp() {
     var popUp = document.getElementById("popUp");
@@ -63,7 +48,6 @@ function togglePasswordVisibility(event) {
 function login(event) {
     event.preventDefault();
 }
-
 function signUp(event) {
     event.preventDefault();
 }
