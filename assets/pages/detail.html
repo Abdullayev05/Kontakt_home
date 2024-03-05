@@ -81,11 +81,40 @@
                     <div class="sebet_user_icon">
                         <span>
                             <i class="fa-solid fa-bag-shopping"></i>
-                            <a href="">Səbət</a>
+                            <a href="#">Səbət</a>
                         </span>
-                        <span>
+                        <span class="account">
                             <i class="fa-regular fa-user"></i>
-                            <a href="">Hesabim</a>
+                            <button class="login_btn" onclick="togglePopUp()">Login</button>
+                            <div class="pop_up" id="popUp">
+                                <div class="cixis_icon">
+                                    <i class="fa-solid fa-xmark" id="closeIcon" onclick="togglePopUp()"></i>
+                                </div>
+                                <h3>Login</h3>
+                                <form>
+                                    <label for="name">Ad:</label>
+                                    <input type="text" id="name" name="name">
+                                    <label for="surname">Soyad:</label>
+                                    <input type="text" id="surname" name="surname">
+                                    <label for="email">E-posta:</label>
+                                    <input type="email" id="email" name="email">
+                                    <div class="input_showHide">
+                                        <label for="password">Password:</label>
+                                        <div>
+                                            <input type="password" id="password" name="password">
+                                            <button id="toggleButton"
+                                                onclick="togglePasswordVisibility(event)">Show</button>
+                                        </div>
+                                    </div>
+                                    <div class="qeydiyyat_btn">
+                                        <div class="login_sign">
+                                            <button onclick="login(event)">Login</button>
+                                            <button onclick="signUp(event)">Sign Up</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
                         </span>
                         <a href="#" onclick="toggleRedHeart(event)">
                             <i class="far fa-heart red-heart"></i>
@@ -94,6 +123,7 @@
                             <i class="fa-solid fa-scale-balanced"></i>
                         </a>
                     </div>
+
                 </li>
             </ul>
         </div>
@@ -136,8 +166,8 @@
                     <div>
                         <h3>Daxili yaddaş</h3>
                         <div class="gb_button_div">
-                            <button>128 GB</button>
-                            <button class="two_btn">256 GB</button>
+                            <button id="gb128" class="memory-button">128 GB</button>
+                            <button id="gb256" class="memory-button two_btn">256 GB</button>
                         </div>
                     </div>
                 </div>
