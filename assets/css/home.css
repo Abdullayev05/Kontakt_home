@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two:700|Poppins&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -17,11 +16,11 @@
 }
 
 header {
-    background-color: #807e7ed8;
-    height: 70px;
-    width: 100%;
+    background: #fff;
     position: fixed;
-    z-index: 999;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 0 2px rgba(50,50,50,.2);
 }
 
 header ul {
@@ -35,6 +34,106 @@ header ul {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.down_header {
+    padding-top: 10px;
+}
+
+.top_header {
+    border-bottom: 1px solid #665c5c;
+    /* padding: 10px 0; */
+}
+
+.top_header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.img_spans {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.img_spans img {
+    width: 155px;
+    height: 34px;
+}
+
+.three_spans {
+    display: flex;
+    gap: 25px;
+}
+
+.img_spans a:nth-child(1) {
+    color: red;
+    font-weight: 500;
+    letter-spacing: -.02em;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.img_spans a:nth-child(2),
+.img_spans a:nth-child(3) {
+    color: #323232;
+    font-weight: 500;
+    letter-spacing: -.02em;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.span_btn_select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.span_btn_select .ayliq_btn {
+    width: 117px;
+    height: 39px;
+    border-radius: 10px;
+    border: 1px solid #17a539;
+    color: #17a539;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    /* letter-spacing: -.02em; */
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.daxil_ol {
+    border: 0;
+    width: 79px;
+    height: 37px;
+    color: #323232;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+.span_btn_select a {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    line-height: 20px;
+    margin-right: 24px;
+    color: #323232;
+}
+
+.span_btn_select span {
+    color: #FF0000;
+}
+
+.span_btn_select select {
+    font-size: 16px;
+    border: 0;
+    outline: none;
 }
 
 .pop_up {
@@ -182,9 +281,9 @@ header .holo {
     color: #000000;
 }
 
-#first_section {
+/* #first_section {
     padding-top: 70px;
-}
+} */
 
 #first_section img {
     height: 650px;
@@ -211,7 +310,7 @@ header .holo {
 
 .input_div {
     height: 48px;
-    width: 500px;
+    width: 751px;
     border-radius: 30px;
     background-color: #F6F6F6;
     display: flex;
