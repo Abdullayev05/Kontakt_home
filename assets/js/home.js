@@ -52,3 +52,14 @@ function signUp(event) {
     event.preventDefault();
 }
 
+let heartIcon = document.getElementById('heart');
+let qeydiyyatPopUp = document.querySelector('.qeydiyyat_pop_up');
+
+heartIcon.addEventListener('click', function() {
+    qeydiyyatPopUp.style.display = 'block';
+});
+
+document.querySelector('.qeydiyyat_buttn').addEventListener('click', function() {
+    heartIcon.classList.add('heart_red');
+    qeydiyyatPopUp.style.display = 'none';
+});

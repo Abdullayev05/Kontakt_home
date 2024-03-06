@@ -31,6 +31,12 @@ header ul {
     justify-content: space-between;
 }
 
+.header_icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .pop_up {
     display: none;
     position: fixed;
@@ -426,6 +432,74 @@ header .holo {
     font-weight: 600;
     line-height: 20px;
     letter-spacing: -0.02em;
+}
+
+.qeydiyyat_pop_up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    max-width: 328px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    z-index: 810;
+    text-align: start;
+}
+
+.hesab_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hesab_icon i {
+    color: #17A539;
+}
+
+.s_hesab {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.qeydiyyat_pop_up p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #777777;
+    padding-top: 15px;
+}
+
+.qeydiyyat_daxil_btn .qeydiyyat_buttn {
+    width: 100%;
+    padding: 8px 15px 8px 15px;
+    border-radius: 10px;
+    color: #323232;
+    border: 1px solid #323232;
+    background-color: white;
+}
+
+.qeydiyyat_daxil_btn .qeydiyyat_buttn:hover {
+    color: #777777;
+    border: 1px solid #777777;
+    background-color: white;
+}
+
+.qeydiyyat_daxil_btn .daxil_ol_btn {
+    border: 0;
+    width: 100%;
+    font-weight: 600;
+    background-color: #F3F3F3;
+}
+
+.exit_icon {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* .ay_date {
