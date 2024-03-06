@@ -502,30 +502,18 @@ header .holo {
     justify-content: flex-end;
 }
 
-/* .ay_date {
-    width: 250px;
-    height: 30px;
-    border-radius: 4px;
-    border: 0;
+.exit_icon i {
+    background-color: #FF0000;
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
-    padding-top: 5px;
-    margin-top: 10px;
-    gap: 15px;
-    margin-top: 20px;
-    background-color: #FDEEE2;
-} */
-
-/* .ay_date h5 {
-    font-weight: 900;
-    color: #FF0000;
-    font-size: 18px;
+    align-items: center;
+    color: #F6F6F6;
+    cursor: pointer;
 }
-
-.ay_date h4 {
-    color: #2D2D2D;
-    font-size: 18px;
-} */
 
 .card .one_price {
     color: #FF0000;

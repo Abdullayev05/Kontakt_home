@@ -30,6 +30,9 @@ function togglePopUp() {
 document.getElementById("closeIcon").addEventListener("click", function () {
     document.querySelector(".pop_up").style.display = "none";
 })
+document.getElementById("two_close_icon").addEventListener("click", function () {
+    document.querySelector(".qeydiyyat_pop_up").style.display = "none";
+})
 function toggleRedHeart(event) {
     event.preventDefault();
 }
@@ -55,11 +58,11 @@ function signUp(event) {
 let heartIcon = document.getElementById('heart');
 let qeydiyyatPopUp = document.querySelector('.qeydiyyat_pop_up');
 
-heartIcon.addEventListener('click', function() {
+heartIcon.addEventListener('click', function () {
     qeydiyyatPopUp.style.display = 'block';
 });
 
-document.querySelector('.qeydiyyat_buttn').addEventListener('click', function() {
+document.querySelector('.qeydiyyat_buttn').addEventListener('click', function () {
     heartIcon.classList.add('heart_red');
     qeydiyyatPopUp.style.display = 'none';
 });
