@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two:700|Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,18 +10,19 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.container {
+/* .container {
     width: 80%;
     max-width: 1140px;
     margin: 0 auto;
-}
+} */
 
 header {
     background: #fff;
     position: fixed;
     width: 100%;
     z-index: 3;
-    box-shadow: 0 0 2px rgba(50,50,50,.2);
+    padding: 0 39px 0 39px;
+    box-shadow: 0 0 2px rgba(50, 50, 50, .2);
 }
 
 header ul {
@@ -40,8 +42,25 @@ header ul {
     padding-top: 10px;
 }
 
+.down_header_icon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.down_header_icon .line_icon {
+    background: #eaeaea;
+    height: 35px;
+    width: 1px;
+}
+
+/* .down_header_icon a {
+    display: flex;
+    gap: 20px;
+} */
+
 .top_header {
-    border-bottom: 1px solid #665c5c;
+    border-bottom: 1px solid #d3cfcf;
     /* padding: 10px 0; */
 }
 
@@ -102,6 +121,7 @@ header ul {
     font-size: 14px;
     font-weight: 500;
     justify-content: center;
+    background-color: white;
     /* letter-spacing: -.02em; */
     margin-right: 16px;
     cursor: pointer;
@@ -281,52 +301,95 @@ header .holo {
     color: #000000;
 }
 
-/* #first_section {
-    padding-top: 70px;
-} */
+#first_section {
+    padding: 150px 39px 0 39px;
+    display: flex;
+}
+
+.mySwiper {
+    width: 565px;
+    padding-left: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 #first_section img {
-    height: 650px;
+    height: 565px;
+    width: 565px;
     object-fit: cover;
+    border-radius: 10px;
+
     background-position: center;
+}
+
+.left_div {
+    height: 565px;
+    width: 245px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.left_div span {
+    color: #323232;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left_div span:hover {
+    color: #FF0000;
 }
 
 .swiper-slide {
     width: 400px;
 }
 
-.kataloq {
-    height: 48px;
-    width: 110px;
-    background-color: #ff003c;
-    border-radius: 10px;
-    border: 0;
-    color: white;
+.kataloq_div {
     display: flex;
-    gap: 10px;
-    justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
-.input_div {
-    height: 48px;
+.kataloq_div span {
+    font-size: 16px;
+    color: #4B5563;
+    font-weight: 500;
+}
+
+/* .input_div {
+    height: 38px;
     width: 751px;
     border-radius: 30px;
     background-color: #F6F6F6;
     display: flex;
     padding: 5px;
     justify-content: space-between;
-}
+} */
 
 .input_div input {
+    background: #f3f3f3;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: #777;
+    font-weight: 500;
+    letter-spacing: -.02em;
+    line-height: 20px;
+    padding: 8px 0 8px 42px;
+    transition: .3s;
     outline: none;
-    border: 0;
-    width: 500px;
-    padding-left: 20px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 300;
-    background-color: #F6F6F6;
+    width: 100%;
+    height: 38px;
+    width: 751px;
+    margin-left: 80px;
 }
 
 .input_div button {
@@ -392,7 +455,7 @@ header .holo {
 }
 
 #two_section {
-    padding-top: 150px;
+    padding: 150px 39px 0 39px;
 }
 
 #two_section img {
@@ -505,15 +568,12 @@ header .holo {
     text-align: start;
 }
 
-
 .card img {
     margin: 0 auto;
 }
 
 .card .h3_sss {
-    /* display: flex; */
     text-align: start;
-    /* align-items: flex-start; */
     padding-top: 20px;
 }
 
@@ -622,18 +682,22 @@ footer {
     height: 500px;
     background-color: #fcfafa;
     margin-top: 100px;
+    display: flex;
+    padding: 50px 50px 0 50px;
+    justify-content: space-between;
 }
+
+/* footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+} */
 
 .one_footer_words h3 {
     font-size: 18px;
     font-weight: 700;
 }
 
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 100px;
-}
 
 .one_footer_words {
     display: flex;
@@ -732,8 +796,8 @@ body {
 }
 
 .swiper-container {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 
 .swiper-slide {
