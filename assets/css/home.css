@@ -305,6 +305,7 @@ header .holo {
     padding: 150px 39px 0 39px;
     display: flex;
 }
+
 .mySwiper {
     width: 565px;
     padding-left: 10px;
@@ -317,7 +318,6 @@ header .holo {
     width: 565px;
     object-fit: cover;
     border-radius: 10px;
-
     background-position: center;
 }
 
@@ -348,6 +348,74 @@ header .holo {
     color: #FF0000;
 }
 
+.right_div {
+    height: 565px;
+    width: 245px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: 215px;
+}
+
+.right_div h3 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
+}
+.right_div img {
+    width: 84px;
+    height: 84px; 
+}
+
+.dealTimer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 15px 10px;
+}
+
+.dealTimer__hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.dealTimer em {
+    font-size: 12px;
+    font-style: normal;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -.02em;
+}
+
+.right_div span {
+    color: #17a539;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    line-height: 20px;
+    margin-bottom: 2px;
+}
+
+.dealTimer__vert {
+    background: #eaeaea;
+    height: 10px;
+    margin: auto;
+    width: 1px;
+}
+.down_div {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100px;
+    overflow-x: hidden;
+}
 .swiper-slide {
     width: 400px;
 }
