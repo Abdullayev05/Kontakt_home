@@ -159,3 +159,7 @@ const initializeSlider = () => {
 
 window.addEventListener("resize", initializeSlider);
 window.addEventListener("load", initializeSlider);
+
+document.getElementById('video_link').addEventListener('click', function () {
+  window.open('https://youtu.be/uK2WbyJx-c4', '_blank');
+});
