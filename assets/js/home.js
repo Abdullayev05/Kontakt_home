@@ -1,7 +1,7 @@
 (function () {
   const heart = document.getElementById('heart');
   heart.addEventListener('click', function () {
-      heart.classList.toggle('red');
+    heart.classList.toggle('red');
   });
 })();
 
@@ -10,16 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
   var popUp = document.getElementById('popUp');
 
   heartIcon.addEventListener('click', function () {
-      popUp.style.display = 'block';
+    popUp.style.display = 'block';
   });
 });
 
 function togglePopUp() {
   var popUp = document.getElementById("popUp");
   if (popUp.style.display === "block") {
-      popUp.style.display = "none";
+    popUp.style.display = "none";
   } else {
-      popUp.style.display = "block";
+    popUp.style.display = "block";
   }
 }
 
@@ -121,8 +121,8 @@ const initializeSlider = () => {
       );
       const scrollPosition =
         (boundedPosition / maxThumbPosition) * maxScrollLeft;
-        scrollbarThumb.style.left = `${thumbPosition}px`;
-        imageList.scrollLeft = scrollPosition;
+      scrollbarThumb.style.left = `${thumbPosition}px`;
+      imageList.scrollLeft = scrollPosition;
     };
     const handleMouseUp = () => {
       document.removeEventListener("mousemove", handleMouseMove);
