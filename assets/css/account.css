@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.pop_up {
+/* .pop_up {
     margin: 0 auto;
     margin-top: 70px;
     border-radius: 10px;
@@ -91,4 +91,4 @@ input[type="submit"]:hover {
     gap: 10px;
     display: flex;
     flex-direction: column;
-}
+} */
