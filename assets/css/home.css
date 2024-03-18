@@ -292,6 +292,32 @@ input[type="submit"]:hover {
     color: #ff003c;
 }
 
+.input_div input {
+    background: #f3f3f3;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: #777;
+    font-weight: 500;
+    letter-spacing: -.02em;
+    line-height: 20px;
+    padding: 8px 42px 8px 42px;
+    transition: .3s;
+    outline: none;
+    width: 100%;
+    height: 38px;
+    width: 751px;
+    margin-left: 80px;
+}
+
+.input_div button {
+    border: 0;
+    width: 38px;
+    height: 38px;
+    color: white;
+    background-color: #ff003c;
+    border-radius: 50%;
+}
+
 #first_section {
     padding: 137px 39px 0 39px;
     display: flex;
@@ -372,6 +398,17 @@ input[type="submit"]:hover {
     padding: 15px;
     overflow: hidden;
 }
+/* 
+.left_div:hover {
+    background: #fff;
+    width: 944px;
+    height: 565px;
+    position: absolute;
+} */
+
+/* #center {
+    position: relative;
+} */
 
 .left_div span {
     color: #323232;
@@ -494,7 +531,7 @@ input[type="submit"]:hover {
     background-color: #ff003c;
 }
 
-.mySwiper2 span{
+.mySwiper2 span {
     font-size: 14px;
     color: #FFFFFF;
     font-weight: 400;
@@ -510,32 +547,6 @@ input[type="submit"]:hover {
     font-size: 16px;
     color: #4B5563;
     font-weight: 500;
-}
-
-.input_div input {
-    background: #f3f3f3;
-    border-radius: 10px;
-    border: 1px solid transparent;
-    color: #777;
-    font-weight: 500;
-    letter-spacing: -.02em;
-    line-height: 20px;
-    padding: 8px 42px 8px 42px;
-    transition: .3s;
-    outline: none;
-    width: 100%;
-    height: 38px;
-    width: 751px;
-    margin-left: 80px;
-}
-
-.input_div button {
-    border: 0;
-    width: 38px;
-    height: 38px;
-    color: white;
-    background-color: #ff003c;
-    border-radius: 50%;
 }
 
 .dropdown-menu {
