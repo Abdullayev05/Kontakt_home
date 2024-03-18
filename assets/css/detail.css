@@ -15,7 +15,7 @@
 
 header {
     background: #fff;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     z-index: 999;
     padding: 0 39px 0 39px;
@@ -329,9 +329,7 @@ input[type="submit"]:hover {
 
 .first_section {
     height: 500px;
-    margin-top: 50px;
-    /* background-color: #FFFFFF; */
-    
+    padding-top: 200px;
 }
 
 .first_section .container {
