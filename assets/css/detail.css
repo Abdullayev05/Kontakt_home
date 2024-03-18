@@ -15,9 +15,9 @@
 
 header {
     background: #fff;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    z-index: 3;
+    z-index: 999;
     padding: 0 39px 0 39px;
     box-shadow: 0 0 2px rgba(50, 50, 50, .2);
 }
@@ -36,7 +36,7 @@ header ul {
 }
 
 .down_header {
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 .down_header_icon {
@@ -60,7 +60,7 @@ header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 9px;
 }
 
 .img_spans {
@@ -99,7 +99,7 @@ header ul {
 .span_btn_select {
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 5px; */
 }
 
 .span_btn_select .ayliq_btn {
@@ -125,6 +125,7 @@ header ul {
     height: 37px;
     color: #323232;
     font-size: 14px;
+    font-weight: 500;
     border-radius: 10px;
     background-color: #f3f3f3;
 }
@@ -146,6 +147,7 @@ header ul {
     font-size: 16px;
     border: 0;
     outline: none;
+    padding-left: 22px;
 }
 
 .pop_up {
@@ -282,6 +284,7 @@ input[type="submit"]:hover {
     color: #ff003c;
 }
 
+
 .kataloq_div {
     display: flex;
     align-items: center;
@@ -328,6 +331,7 @@ input[type="submit"]:hover {
     height: 500px;
     margin-top: 50px;
     /* background-color: #FFFFFF; */
+    
 }
 
 .first_section .container {
