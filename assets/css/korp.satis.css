@@ -5,7 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
@@ -37,6 +36,7 @@ header ul {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    list-style: none;
 }
 
 .header_icons {
@@ -337,7 +337,7 @@ input[type="submit"]:hover {
 }
 
 .satis_melumatlari {
-    height: 1000px;
+    height: 2100px;
     background-color: #fff;
     border-radius: 10px;
     margin-top: 15px;
@@ -345,6 +345,7 @@ input[type="submit"]:hover {
 }
 
 .satis_img img {
+    width: 1220px;
     height: 250px;
 }
 
@@ -352,6 +353,8 @@ input[type="submit"]:hover {
     padding-top: 100px;
 }
 
+.partnyor_div h3,
+.melumatlar ul li,
 .melumatlar p {
     color: #323232;
     font-size: 18px;
@@ -367,8 +370,21 @@ input[type="submit"]:hover {
 }
 
 .melumatlar ul li {
-    list-style: square;
     line-height: 30px;
+}
+
+.partnyor_div {
+    padding-top: 50px;
+}
+
+.partnyor_div img {
+    height: 203px;
+    width: 203px;
+}
+
+.partnyor_div div {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -479,9 +495,9 @@ footer {
     align-items: center;
 }
 
-.swiper-slide img {
+/* .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
