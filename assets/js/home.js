@@ -75,6 +75,23 @@ document.querySelector('.qeydiyyat_buttn').addEventListener('click', function ()
   qeydiyyatPopUp.style.display = 'none';
 });
 
+$('#btn1').css({
+  'background-color': '#323232',
+  'color': '#fff'
+});
+
+$('.satis_lideri button').click(function () {
+  $('.satis_lideri button').css({
+      'background-color': '#E4E2E2',
+      'color': '#4b5563'
+  });
+
+  $(this).css({
+      'background-color': '#323232',
+      'color': '#fff'
+  });
+});
+
 function updateTimer() {
   let hours = parseInt(document.getElementById('hours').textContent);
   let minutes = parseInt(document.getElementById('minutes').textContent);

@@ -736,10 +736,46 @@ input[type="submit"]:hover {
     line-height: 20px;
 }
 
+.satis_lideri {
+    margin-top: 100px;
+}
+
+.satis_lideri div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.satis_lideri button {
+    color: #4b5563;
+    border-radius: 20px;
+    font-size: 14px;
+    height: 41px;
+    border: 0;
+    padding: 10px 15px;
+    background-color: #e4e2e2;
+}
+
+#btn1 {
+    background-color: #323232;
+    color: #fff;
+}
+#btn1 {
+    background-color: #323232;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.satis_lideri button:hover {
+    background-color: #323232;
+    transition: 0.5s;
+    color: #fff;
+}
+
 .card {
     width: 243px;
     height: 380px;
-    margin-top: 200px;
+    margin-top: 20px;
     border-radius: 10px;
     border: 0;
     padding-top: 30px;
