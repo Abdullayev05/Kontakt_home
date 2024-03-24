@@ -54,7 +54,15 @@ function login(event) {
 function signUp(event) {
   event.preventDefault();
 }
+function openPopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "block";
+}
 
+function closePopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "none";
+}
 let heartIcon = document.getElementById('heart');
 let qeydiyyatPopUp = document.querySelector('.qeydiyyat_pop_up');
 

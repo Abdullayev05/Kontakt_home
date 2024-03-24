@@ -127,6 +127,52 @@ header ul {
     cursor: pointer;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 560px;
+    height: 265px;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+.odenis_usullari {
+    display: flex;
+    gap: 20px;
+}
+
+.odenis_usullari img {
+    width: 120px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.odenis_usullari .odenis_card {
+    width: 155px;
+    height: 65px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
 .daxil_ol {
     border: 0;
     width: 79px;
@@ -309,6 +355,26 @@ input[type="submit"]:hover {
     margin-left: 80px;
 }
 
+.input_div {
+    position: relative;
+}
+
+.input_div input[type="search"] {
+    padding-left: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.input_div .fa-solid.fa-magnifying-glass {
+    position: absolute;
+    padding-left: 8px;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 19px;
+    color: #323232;
+}
+
 .input_div button {
     border: 0;
     width: 38px;
@@ -350,7 +416,6 @@ input[type="submit"]:hover {
     background-color: #fff;
     justify-content: center;
     align-items: center;
-
 }
 
 .swiper-slide img {
@@ -369,6 +434,7 @@ input[type="submit"]:hover {
     height: 565px;
     width: 565px;
     border-radius: 10px;
+    /* aspect-ratio: 1/1; */
 }
 
 /* 
@@ -379,13 +445,13 @@ input[type="submit"]:hover {
     overflow: hidden;
 } */
 
-#first_section img {
+/* #first_section img {
     height: 565px;
     width: 565px;
     object-fit: cover;
     border-radius: 10px;
     background-position: center;
-}
+} */
 
 .left_div {
     height: 565px;
@@ -398,17 +464,14 @@ input[type="submit"]:hover {
     padding: 15px;
     overflow: hidden;
 }
-/* 
+
 .left_div:hover {
     background: #fff;
-    width: 944px;
+    width: 1266px;
     height: 565px;
-    position: absolute;
-} */
-
-/* #center {
     position: relative;
-} */
+    position: absolute;
+}
 
 .left_div span {
     color: #323232;
@@ -637,7 +700,7 @@ input[type="submit"]:hover {
 
 .melumatlar {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-top: 10px;
 }
 
