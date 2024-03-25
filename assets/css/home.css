@@ -395,7 +395,9 @@ input[type="submit"]:hover {
     gap: 10px;
     padding: 137px 39px 0 39px;
 }
-
+.one_section .corner:nth-child(1){
+    border-radius: 10px;
+}
 .corner {
     width: calc((100% - 20px) / 5);
     /* background-color: #f72626; */
@@ -437,21 +439,21 @@ input[type="submit"]:hover {
     /* aspect-ratio: 1/1; */
 }
 
-/* 
-.mySwiper {
+
+/* .mySwiper {
     width: 565px;
     padding-left: 10px;
     border-radius: 10px;
     overflow: hidden;
-} */
+}  */
 
-/* #first_section img {
+ /* #first_section img {
     height: 565px;
     width: 565px;
     object-fit: cover;
     border-radius: 10px;
     background-position: center;
-} */
+}  */
 
 .left_div {
     height: 565px;
@@ -463,14 +465,6 @@ input[type="submit"]:hover {
     gap: 15px;
     padding: 15px;
     overflow: hidden;
-}
-
-.left_div:hover {
-    background: #fff;
-    width: 1266px;
-    height: 565px;
-    position: relative;
-    position: absolute;
 }
 
 .left_div span {
@@ -673,7 +667,7 @@ input[type="submit"]:hover {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    overflow-x: hidden;
+    overflow-x: scroll;
     background: #fff;
     height: 100px;
 }
@@ -681,6 +675,7 @@ input[type="submit"]:hover {
 .markalar {
     display: flex;
     gap: 58px;
+    padding-left: 20px;
 }
 
 .markalar a {
@@ -1144,7 +1139,7 @@ input[type="submit"]:hover {
 .videos {
     display: flex;
     gap: 10px;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .video_div {
