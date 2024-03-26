@@ -1347,12 +1347,8 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .container2 {
-        width: 80%;
+        width: 100%;
     }
-
-    /* header {
-        width: 80%;
-    } */
 
     .img_spans .three_spans {
         display: none;
@@ -1398,11 +1394,7 @@ footer {
         height: 768px;
     }
 
-    .satis_lideri .satis_buttons {
-        /* display: block; */
-    }
-
-    .satis_lideri button {
+    .satis_buttons div {
         display: flex;
         overflow: scroll;
     }
@@ -1410,5 +1402,57 @@ footer {
     #two_section .card {
         width: 440px;
         height: 350px;
+    }
+
+    .footer_div {
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        height: 750px;
+        background-color: #fff;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container2 {
+        width: 100%;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .input_div input {
+        width: 220px;
+    }
+
+    .swiper1 {
+        width: 425px;
+        height: 425px;
+        border-radius: 10px;
+    }
+
+    .one_section #center img {
+        width: 425px;
+        height: 425px;
+    }
+
+    .span_btn_select a:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .span_btn_select select {
+        font-size: 14px;
+    }
+
+    #two_section .card {
+        width: 226px;
+        height: 365px;
     }
 }
