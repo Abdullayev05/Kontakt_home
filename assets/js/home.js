@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var heartIcon = document.querySelector('.red-heart');
   var popUp = document.getElementById('popUp');
 
-  heartIcon.addEventListener('click', function () {
-    popUp.style.display = 'block';
-  });
+  // heartIcon.addEventListener('click', function () {
+  //   popUp.style.display = 'block';
+  // });
 });
 
 function togglePopUp() {
@@ -82,13 +82,13 @@ $('#btn1').css({
 
 $('.satis_lideri button').click(function () {
   $('.satis_lideri button').css({
-      'background-color': '#E4E2E2',
-      'color': '#4b5563'
+    'background-color': '#E4E2E2',
+    'color': '#4b5563'
   });
 
   $(this).css({
-      'background-color': '#323232',
-      'color': '#fff'
+    'background-color': '#323232',
+    'color': '#fff'
   });
 });
 
@@ -122,3 +122,4 @@ updateTimer();
 document.getElementById('video_link').addEventListener('click', function () {
   window.open('https://youtu.be/uK2WbyJx-c4', '_blank');
 });
+
