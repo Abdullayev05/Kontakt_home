@@ -402,7 +402,6 @@ input[type="submit"]:hover {
 
 .corner {
     width: calc((100% - 20px) / 5);
-    /* background-color: #f72626; */
 }
 
 #center {
@@ -415,10 +414,10 @@ input[type="submit"]:hover {
 }
 
 .swiper-slide {
-    text-align: center;
+    /* text-align: center; */
     display: flex;
-    background-color: #fff;
-    justify-content: center;
+    /* background-color: #fff; */
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -438,7 +437,6 @@ input[type="submit"]:hover {
     height: 565px;
     width: 565px;
     border-radius: 10px;
-    /* aspect-ratio: 1/1; */
 }
 
 
