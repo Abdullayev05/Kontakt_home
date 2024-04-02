@@ -92,6 +92,10 @@ $('.satis_lideri button').click(function () {
   });
 });
 
+document.getElementById('video_link').addEventListener('click', function () {
+  window.open('https://youtu.be/uK2WbyJx-c4', '_blank');
+});
+
 function updateTimer() {
   let hours = parseInt(document.getElementById('hours').textContent);
   let minutes = parseInt(document.getElementById('minutes').textContent);
@@ -117,9 +121,9 @@ function updateTimer() {
 const timerInterval = setInterval(updateTimer, 1000);
 updateTimer();
 
-
-
-document.getElementById('video_link').addEventListener('click', function () {
-  window.open('https://youtu.be/uK2WbyJx-c4', '_blank');
-});
-
+fetch('URL_OF_YOUR_JSON_FILE.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => console.error('Hata:', error));
