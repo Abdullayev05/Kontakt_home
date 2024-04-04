@@ -1,17 +1,3 @@
-// fetch('./assets/json/card.json')
-//     .then(response => {
-//         if (!response.ok) {
-//             throw new Error('Network response was not ok');
-//         }
-//         return response.json();
-//     })
-//     .then(data => {
-//         console.log(data);
-//     })
-//     .catch(error => {
-//         console.error('There was a problem fetching the data:', error);
-//     });
-
 fetch('./assets/json/card.json')
     .then(response => {
         if (!response.ok) {
@@ -101,3 +87,12 @@ fetch('./assets/json/card.json')
     .catch(error => {
         console.error('There was a problem fetching the data:', error);
     });
+
+
+    
+const data_card = document.querySelector("cards")
+axios
+    .get('./assets/json/card.json')
+    .then(product) => {
+    let datalar = product.
+}

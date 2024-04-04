@@ -414,10 +414,7 @@ input[type="submit"]:hover {
 }
 
 .swiper-slide {
-    /* text-align: center; */
     display: flex;
-    /* background-color: #fff; */
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -438,22 +435,6 @@ input[type="submit"]:hover {
     width: 565px;
     border-radius: 10px;
 }
-
-
-/* .mySwiper {
-    width: 565px;
-    padding-left: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-}  */
-
-/* #first_section img {
-    height: 565px;
-    width: 565px;
-    object-fit: cover;
-    border-radius: 10px;
-    background-position: center;
-}  */
 
 .left_div {
     height: 565px;
