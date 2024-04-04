@@ -966,7 +966,7 @@ input[type="submit"]:hover {
     height: 48px;
     width: 200px;
     border: 0;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .sebet_btn button:hover {
@@ -1034,20 +1034,20 @@ input[type="submit"]:hover {
 }
 
 .text_dec {
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
     font-weight: 700;
-    color: #777777;
+    color: #ff003c;
     font-size: 14px;
     letter-spacing: -0.02em;
 }
 
-.one_price {
+/* .one_price {
     color: #ff003c;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: -0.02em;
-}
+} */
 
 .qeydiyyat_pop_up {
     display: none;
