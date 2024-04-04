@@ -120,10 +120,3 @@ function updateTimer() {
 }
 const timerInterval = setInterval(updateTimer, 1000);
 updateTimer();
-
-fetch('URL_OF_YOUR_JSON_FILE.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => console.error('Hata:', error));
