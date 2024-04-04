@@ -88,11 +88,9 @@ fetch('./assets/json/card.json')
         console.error('There was a problem fetching the data:', error);
     });
 
-
-    
-const data_card = document.querySelector("cards")
-axios
-    .get('./assets/json/card.json')
-    .then(product) => {
-    let datalar = product.
-}
+// const data_card = document.querySelector("cards")
+// axios
+//     .get('./assets/json/card.json')
+//     .then(product) => {
+//     let datalar = product.
+// }
