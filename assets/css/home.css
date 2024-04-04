@@ -801,6 +801,7 @@ input[type="submit"]:hover {
 .card img {
     width: 180px;
     height: 200px;
+    margin-top: 22px;
 }
 
 .card:hover {
@@ -927,27 +928,6 @@ input[type="submit"]:hover {
     bottom: -10px;
 }
 
-@media only screen and (max-width: 1023px) {
-    .slider-container .slide-button {
-        display: none !important;
-    }
-
-    .slider-container .image-grid {
-        gap: 10px;
-        margin-bottom: 15px;
-        scroll-snap-type: x mandatory;
-    }
-
-    .slider-container .image-grid .image-item {
-        width: 280px;
-        height: 380px;
-    }
-
-    .slider-scrollbar .scrollbar-thumb {
-        width: 20%;
-    }
-}
-
 .line {
     background: #eaeaea;
     height: 24px;
@@ -1022,10 +1002,6 @@ input[type="submit"]:hover {
 
 .card-title {
     text-align: start;
-}
-
-.card img {
-    margin: 0 auto;
 }
 
 .card .h3_sss {
@@ -1472,5 +1448,26 @@ footer {
 
     .container1 {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .slider-container .slide-button {
+        display: none !important;
+    }
+
+    .slider-container .image-grid {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-container .image-grid .image-item {
+        width: 280px;
+        height: 380px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
     }
 }

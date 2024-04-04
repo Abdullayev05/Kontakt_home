@@ -13,28 +13,31 @@
 //     });
 
 fetch('./assets/json/card.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            const cards = document.getElementById('cards');
-            const products = data.products;
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        const cards = document.getElementById('cards');
+        const products = data.products;
 
-            products.map(product => {
-                console.log(product);
-                const card_div = document.createElement('div');
-                card_div.classList.add('card');
-                card_div.innerHTML = `
+        products.map(product => {
+            console.log(product);
+            const card_div = document.createElement('div');
+            card_div.classList.add('card');
+            card_div.innerHTML = `
                     <a href="#">
                         <img src="${product.image}" class="card-img-top" alt="">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">${product.brand} ${product.model}</h5>
                         <div class="h3_sss">
-                            <h3 class="text_dec">${product.price}</h3>
+                        <h3 class="text_dec">
+                        <span style="margin-right: 3px;">${product.price}</span>
+                        <span>₼</span>
+                    </h3>
                         </div>
                         <div class="sebet_btn">
                                 <button>
@@ -91,10 +94,10 @@ fetch('./assets/json/card.json')
                         </div>
                     </div>
                 `;
-                cards.appendChild(card_div);
-                
-            });
-        })
-        .catch(error => {
-            console.error('There was a problem fetching the data:', error);
+            cards.appendChild(card_div);
+
         });
+    })
+    .catch(error => {
+        console.error('There was a problem fetching the data:', error);
+    });
