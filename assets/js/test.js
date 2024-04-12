@@ -91,6 +91,49 @@ fetch('./assets/json/card.json')
 // const data_card = document.querySelector("cards")
 // axios
 //     .get('./assets/json/card.json')
-//     .then(product) => {
-//     let datalar = product.
+//     .then(electronics) => {
+//     let datalar = electronics.data.title
+//     datalar.map((technology))
+//     let img = document.createElement('image')
+//     data_card.append(img)
+//     img.setAttribute("image", product.brand.title.id)
+//     img.addEventListener("click"() => {
+//         window.document.location.https = "detail.html";
+//     })
 // }
+
+// const data_card = document.querySelector("cards");
+// axios
+//     .get('./assets/json/card.json')
+//     .then((electronics) => {
+//         let datalar = electronics.data.title;
+//         datalar.map((product) => {
+//             let img = document.createElement('img');
+//             data_card.append(img);
+//             img.setAttribute("src", product.brand.title.id);
+//             img.addEventListener("click", () => {
+//                 window.document.location.href = "detail.html";
+//             });
+//         });
+//     })
+//     .catch((error) => {
+//         console.error('Hata oluştu:', error);
+//     });
+
+// const data_card = document.querySelector("cards");
+// axios
+//     .get('./assets/json/card.json')
+//     .then((response) => {
+//         let products = response.data.products;
+//         products.map((product) => {
+//             let img = document.createElement('img');
+//             data_card.append(img);
+//             img.setAttribute("src", product.image);
+//             img.addEventListener("click", () => {
+//                 window.location.href = "detail.html";
+//             });
+//         });
+//     })
+//     .catch((error) => {
+//         console.error('Hata oluştu:', error);
+//     });
