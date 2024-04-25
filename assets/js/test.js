@@ -8,7 +8,6 @@ fetch('./assets/json/card.json')
     .then(data => {
         const cards = document.getElementById('cards');
         const products = data.products;
-
         products.map(product => {
             console.log(product);
             const card_div = document.createElement('div');
@@ -88,6 +87,52 @@ fetch('./assets/json/card.json')
         console.error('There was a problem fetching the data:', error);
     });
 
+
+    // Axtarış funksiyası
+function axtarish() {
+    // Axtarış sözü
+    var axtarishSozu = document.getElementById('searchInput').value.toLowerCase();
+  
+    // API-dən məlumatları almaq üçün fetch istifadə edirik
+    fetch('./assets/json/card.json')
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response.json();
+      })
+      .then(data => {
+          const cards = document.getElementById('cards');
+          const products = data.products;
+  
+          // Axtarış nəticələri üçün bir massiv yaradırıq
+          var axtarishNeticeleri = products.filter(product => {
+              // Məlumatlarda axtarış sözünü axtarırıq
+              return (
+                  product.brand.toLowerCase().includes(axtarishSozu) ||
+                  product.model.toLowerCase().includes(axtarishSozu)
+              );
+          });
+  
+          // Axtarış nəticələrini göstər
+          var nəticəListi = document.getElementById('searchResults');
+          // Əvvəcə mövcud nəticələri təmizləyək
+          nəticəListi.innerHTML = '';
+          // Hər bir nəticə üçün yeni bir <li> elementi yarat
+          axtarishNeticeleri.forEach(function(nətica) {
+              var listItem = document.createElement('li');
+              listItem.textContent = `${nətica.brand} ${nətica.model}`;
+              nəticəListi.appendChild(listItem);
+          });
+      })
+      .catch(error => {
+          console.error('There was a problem fetching the data:', error);
+      });
+  }
+  
+  // Axtarış inputuna dəyişiklik olduğunda axtarış funksiyasını çağıran hadisə dinləyicisi əlavə edin
+  document.getElementById('searchInput').addEventListener('input', axtarish);
+  
 // const data_card = document.querySelector("cards")
 // axios
 //     .get('./assets/json/card.json')
@@ -136,4 +181,55 @@ fetch('./assets/json/card.json')
 //     })
 //     .catch((error) => {
 //         console.error('Hata oluştu:', error);
+//     });
+
+
+// fetch('./assets/json/card.json')
+//     .then(response => {
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+//         return response.json();
+//     })
+//     .then(data => {
+//         const cards = document.getElementById('cards');
+//         const products = data.products;
+
+//         products.map(product => {
+//             const card_div = document.createElement('div');
+//             card_div.classList.add('card');
+//             card_div.innerHTML = `
+//                 <a href="detail.html?brand=${encodeURIComponent(product.brand)}&model=${encodeURIComponent(product.model)}">
+//                     <img src="${product.image}" class="card-img-top" alt="">
+//                 </a>
+//                 <div class="card-body">
+//                     <h5 class="card-title">${product.brand} ${product.model}</h5>
+//                     <div class="h3_sss">
+//                         <h3 class="text_dec">
+//                             <span style="margin-right: 3px;">${product.price}</span>
+//                             <span>₼</span>
+//                         </h3>
+//                     </div>
+//                     <div class="sebet_btn">
+//                         <button>
+//                             <svg width="17" height="17" viewBox="0 0 18 18" fill="none"
+//                                 xmlns="http://www.w3.org/2000/svg">
+//                                 <!-- SVG içeriği -->
+//                             </svg>
+//                             <span class="sebet_elavet">Səbətə əlavə et</span>
+//                         </button>
+//                         <!-- Diğer içerikler -->
+//                     </div>
+//                     <div class="ekran_yaddas">
+//                         <span>Ekran: <em>${product.screenSize}"</em></span>
+//                         <span>Operativ yaddaş: <em>${product.RAM} GB</em></span>
+//                         <span>Daxili yaddaş: <em>${product.internalStorage} GB</em></span>
+//                     </div>
+//                 </div>
+//             `;
+//             cards.appendChild(card_div);
+//         });
+//     })
+//     .catch(error => {
+//         console.error('There was a problem fetching the data:', error);
 //     });
