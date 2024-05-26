@@ -87,69 +87,16 @@ fetch('./assets/json/card.json')
         console.error('There was a problem fetching the data:', error);
     });
 
+    var icon = document.getElementById('userIcon');
+        var hiddenContent = document.getElementById('hiddenContent');
 
-    // Axtarış funksiyası
-function axtarish() {
-    // Axtarış sözü
-    var axtarishSozu = document.getElementById('searchInput').value.toLowerCase();
-  
-    // API-dən məlumatları almaq üçün fetch istifadə edirik
-    fetch('./assets/json/card.json')
-      .then(response => {
-          if (!response.ok) {
-              throw new Error('Network response was not ok');
-          }
-          return response.json();
-      })
-      .then(data => {
-          const cards = document.getElementById('cards');
-          const products = data.products;
-  
-          // Axtarış nəticələri üçün bir massiv yaradırıq
-          var axtarishNeticeleri = products.filter(product => {
-              // Məlumatlarda axtarış sözünü axtarırıq
-              return (
-                  product.brand.toLowerCase().includes(axtarishSozu) ||
-                  product.model.toLowerCase().includes(axtarishSozu)
-              );
-          });
-  
-          // Axtarış nəticələrini göstər
-          var nəticəListi = document.getElementById('searchResults');
-          // Əvvəcə mövcud nəticələri təmizləyək
-          nəticəListi.innerHTML = '';
-          // Hər bir nəticə üçün yeni bir <li> elementi yarat
-          axtarishNeticeleri.forEach(function(nətica) {
-              var listItem = document.createElement('li');
-              listItem.textContent = `${nətica.brand} ${nətica.model}`;
-              nəticəListi.appendChild(listItem);
-          });
-      })
-      .catch(error => {
-          console.error('There was a problem fetching the data:', error);
-      });
-  }
-  
-  // Axtarış inputuna dəyişiklik olduğunda axtarış funksiyasını çağıran hadisə dinləyicisi əlavə edin
-  document.getElementById('searchInput').addEventListener('input', axtarish);
-  
-// const data_card = document.querySelector("cards")
-// axios
-//     .get('./assets/json/card.json')
-//     .then(electronics) => {
-//     let datalar = electronics.data.title
-//     datalar.map((technology))
-//     let img = document.createElement('image')
-//     data_card.append(img)
-//     img.setAttribute("image", product.brand.title.id)
-//     img.addEventListener("click"() => {
-//         window.document.location.https = "detail.html";
-//     })
-// }
-
+        icon.addEventListener('click', function() {
+            hiddenContent.classList.toggle('expanded');
+        });
+   
 // const data_card = document.querySelector("cards");
 // axios
-//     .get('./assets/json/card.json')
+//     .get('./assets/json/card.json/id')
 //     .then((electronics) => {
 //         let datalar = electronics.data.title;
 //         datalar.map((product) => {
@@ -165,26 +112,9 @@ function axtarish() {
 //         console.error('Hata oluştu:', error);
 //     });
 
-// const data_card = document.querySelector("cards");
-// axios
-//     .get('./assets/json/card.json')
-//     .then((response) => {
-//         let products = response.data.products;
-//         products.map((product) => {
-//             let img = document.createElement('img');
-//             data_card.append(img);
-//             img.setAttribute("src", product.image);
-//             img.addEventListener("click", () => {
-//                 window.location.href = "detail.html";
-//             });
-//         });
-//     })
-//     .catch((error) => {
-//         console.error('Hata oluştu:', error);
-//     });
 
 
-// fetch('./assets/json/card.json')
+// fetch('./assets/json/card.json/id')
 //     .then(response => {
 //         if (!response.ok) {
 //             throw new Error('Network response was not ok');
@@ -194,7 +124,6 @@ function axtarish() {
 //     .then(data => {
 //         const cards = document.getElementById('cards');
 //         const products = data.products;
-
 //         products.map(product => {
 //             const card_div = document.createElement('div');
 //             card_div.classList.add('card');
