@@ -16,9 +16,9 @@ function toggleRedHeart(element) {
 function togglePopUp() {
   var popUp = document.getElementById("popUp");
   if (popUp.style.display === "block") {
-      popUp.style.display = "none";
+    popUp.style.display = "none";
   } else {
-      popUp.style.display = "block";
+    popUp.style.display = "block";
   }
 }
 
@@ -37,11 +37,11 @@ function togglePasswordVisibility(event) {
   let passwordField = document.getElementById("password");
   let toggleButton = document.getElementById("toggleButton");
   if (passwordField.type === "password") {
-      passwordField.type = "text";
-      toggleButton.textContent = "Hide";
+    passwordField.type = "text";
+    toggleButton.textContent = "Hide";
   } else {
-      passwordField.type = "password";
-      toggleButton.textContent = "Show";
+    passwordField.type = "password";
+    toggleButton.textContent = "Show";
   }
 }
 function login(event) {
@@ -51,15 +51,15 @@ function login(event) {
 function signUp(event) {
   event.preventDefault();
 }
-$('.memory-button').click(function() {
+$('.memory-button').click(function () {
   $('.memory-button').css({
-      'background-color': '#FFFFFF',
-      'border': '1px solid #E7E7E7'
+    'background-color': '#FFFFFF',
+    'border': '1px solid #E7E7E7'
   });
 
   $(this).css({
-      'background-color': '#ff003c',
-      'border': '1px solid #F58634'
+    'background-color': '#ff003c',
+    'border': '1px solid #F58634'
   });
 });
 (function () {

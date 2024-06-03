@@ -5,195 +5,496 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/mal.css">
+    <script defer src="../js/mal.js"></script>
 </head>
 
 <body>
     <header>
-        <!-- <div class="container"> -->
-        <div class="top_header">
-            <ul>
-                <li>
-                    <div class="img_spans">
-                        <div>
-                            <a href="/index.html">
-                                <img src="https://kontakt.az/static/version1709543917/frontend/Swissup/breeze-customized/az_Latn_AZ/images/logo.svg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="three_spans">
-                            <a href="">
-                                <span>Kampaniya</span>
-                            </a>
-                            <a href="">
-                                <span>Mağazalar</span>
-                            </a>
-                            <a href="">
-                                <span>Korporativ satışlar</span>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="span_btn_select">
-                        <a href="">
-                            <span>*</span>
-                            6060
-                        </a>
-                        <button class="ayliq_btn">Aylıq Ödəniş</button>
-                        <span class="account">
-                            <button class="daxil_ol" onclick="togglePopUp()">Daxil ol</button>
-                            <div class="pop_up" id="popUp">
-                                <div class="cixis_icon">
-                                    <i class="fa-solid fa-xmark" id="closeIcon" onclick="togglePopUp()"></i>
-                                </div>
-                                <h3>Login</h3>
-                                <form>
-                                    <label for="name">Ad:</label>
-                                    <input type="text" id="name" name="name">
-                                    <label for="surname">Soyad:</label>
-                                    <input type="text" id="surname" name="surname">
-                                    <label for="email">E-posta:</label>
-                                    <input type="email" id="email" name="email">
-                                    <div class="input_showHide">
-                                        <label for="password">Password:</label>
-                                        <div>
-                                            <input type="password" id="password" name="password">
-                                            <button id="toggleButton"
-                                                onclick="togglePasswordVisibility(event)">Show</button>
-                                        </div>
-                                    </div>
-                                    <div class="qeydiyyat_btn">
-                                        <div class="login_sign">
-                                            <button onclick="login(event)">Login</button>
-                                            <button onclick="signUp(event)">Sign Up</button>
-                                        </div>
-                                    </div>
-                                </form>
+        <div class="container2">
+            <div class="top_header">
+                <ul>
+                    <li>
+                        <div class="img_spans">
+                            <div>
+                                <a href="./index.html">
+                                    <img src="https://kontakt.az/static/version1709543917/frontend/Swissup/breeze-customized/az_Latn_AZ/images/logo.svg"
+                                        alt="">
+                                </a>
                             </div>
-                        </span>
-                        <select name="" id="">
-                            <option value="">AZ</option>
-                            <option value="">RU</option>
-                        </select>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="down_header">
-            <ul>
-                <li>
-                    <div>
-                        <!-- <button class="kataloq" data-toggle="dropdown" aria-expanded="false">
-                        </button> -->
-                        <div class="kataloq_div">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="color: white;"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M5.75 10C6.99264 10 8 11.0074 8 12.25V15.75C8 16.9926 6.99264 18 5.75 18H2.25C1.00736 18 0 16.9926 0 15.75V12.25C0 11.0074 1.00736 10 2.25 10H5.75ZM15.75 10C16.9926 10 18 11.0074 18 12.25V15.75C18 16.9926 16.9926 18 15.75 18H12.25C11.0074 18 10 16.9926 10 15.75V12.25C10 11.0074 11.0074 10 12.25 10H15.75ZM5.75 11.5H2.25C1.83579 11.5 1.5 11.8358 1.5 12.25V15.75C1.5 16.1642 1.83579 16.5 2.25 16.5H5.75C6.16421 16.5 6.5 16.1642 6.5 15.75V12.25C6.5 11.8358 6.16421 11.5 5.75 11.5ZM15.75 11.5H12.25C11.8358 11.5 11.5 11.8358 11.5 12.25V15.75C11.5 16.1642 11.8358 16.5 12.25 16.5H15.75C16.1642 16.5 16.5 16.1642 16.5 15.75V12.25C16.5 11.8358 16.1642 11.5 15.75 11.5ZM5.75 0C6.99264 0 8 1.00736 8 2.25V5.75C8 6.99264 6.99264 8 5.75 8H2.25C1.00736 8 0 6.99264 0 5.75V2.25C0 1.00736 1.00736 0 2.25 0H5.75ZM15.75 0C16.9926 0 18 1.00736 18 2.25V5.75C18 6.99264 16.9926 8 15.75 8H12.25C11.0074 8 10 6.99264 10 5.75V2.25C10 1.00736 11.0074 0 12.25 0H15.75ZM5.75 1.5H2.25C1.83579 1.5 1.5 1.83579 1.5 2.25V5.75C1.5 6.16421 1.83579 6.5 2.25 6.5H5.75C6.16421 6.5 6.5 6.16421 6.5 5.75V2.25C6.5 1.83579 6.16421 1.5 5.75 1.5ZM15.75 1.5H12.25C11.8358 1.5 11.5 1.83579 11.5 2.25V5.75C11.5 6.16421 11.8358 6.5 12.25 6.5H15.75C16.1642 6.5 16.5 6.16421 16.5 5.75V2.25C16.5 1.83579 16.1642 1.5 15.75 1.5Z"
-                                    fill="#323232"></path>
-                            </svg>
-                            <span>
-                                Kataloq
+                            <div class="three_spans" id="hiddenContent">
+                                <a href="">
+                                    <span>Kampaniya</span>
+                                </a>
+                                <a href="./assets/pages/magazalar.html">
+                                    <span>Mağazalar</span>
+                                </a>
+                                <a href="./assets/pages/korp_satis.html">
+                                    <span>Korporativ satışlar</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="span_btn_select">
+                            <a href="">
+                                <span>*</span> 6060
+                            </a>
+                            <button class="ayliq_btn" onclick="openPopup()">Aylıq Ödəniş</button>
+                            <div id="popup" class="popup">
+                                <div class="popup-content">
+                                    <span class="close" onclick="closePopup()">&times;</span> Aylıq Ödəniş
+                                    <div class="odenis_usullari">
+                                        <div>
+                                            <div class="odenis_card">
+                                                <a href="">
+                                                    <img src="https://kontakt.az/media/amasty/webp/wysiwyg/Payment_partners_logos/MilliOn_logo_png.webp"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="odenis_card">
+                                                <a href="">
+                                                    <img src="https://kontakt.az/media/amasty/webp/wysiwyg/Payment_partners_logos/Portmanataz_logo_png.webp"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="odenis_card">
+                                                <a href="">
+                                                    <img src="https://kontakt.az/media/amasty/webp/wysiwyg/Payment_partners_logos/epul_logo_png.webp"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="odenis_card">
+                                                <a href="">
+                                                    <img src="https://kontakt.az/media/amasty/webp/wysiwyg/Payment_partners_logos/dash-logo_png.webp"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="odenis_card">
+                                                <a href="">
+                                                    <img src="https://kontakt.az/media/amasty/webp/wysiwyg/Payment_partners_logos/GPP_logo_png.webp"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="odenis_card">
+                                                <a href="">
+                                                    <img src="https://kontakt.az/media/amasty/webp/wysiwyg/Payment_partners_logos/hesab_az_logo_new_-1_png.webp"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="account">
+                                <button class="daxil_ol" onclick="togglePopUp()">Daxil ol</button>
+                                <div class="pop_up" id="popUp">
+                                    <div class="cixis_icon">
+                                        <i class="fa-solid fa-xmark" id="closeIcon" onclick="togglePopUp()"></i>
+                                    </div>
+                                    <h3>Login</h3>
+                                    <form>
+                                        <label for="name">Ad:</label>
+                                        <input type="text" id="name" name="name">
+                                        <label for="surname">Soyad:</label>
+                                        <input type="text" id="surname" name="surname">
+                                        <label for="email">E-posta:</label>
+                                        <input type="email" id="email" name="email">
+                                        <div class="input_showHide">
+                                            <label for="password">Password:</label>
+                                            <div>
+                                                <input type="password" id="password" name="password">
+                                                <button id="toggleButton"
+                                                    onclick="togglePasswordVisibility(event)">Show</button>
+                                            </div>
+                                        </div>
+                                        <div class="qeydiyyat_btn">
+                                            <div class="login_sign">
+                                                <button onclick="login(event)">Login</button>
+                                                <button onclick="signUp(event)">Sign Up</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </span>
+                            <select name="" id="">
+                                <option value="">AZ</option>
+                                <option value="">RU</option>
+                            </select>
+                            <div class="li_icon_admin">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="input_div">
-                        <input type="search" name="" id="" placeholder="Axtarış...">
-                    </div>
-                </li>
-                <li>
-                    <div class="sebet_user_icon">
-                        <div class="down_header_icon">
-                            <a href="#">
-                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                    </li>
+                </ul>
+            </div>
+            <div class="down_header">
+                <ul>
+                    <li>
+                        <div>
+                            <!-- <button class="kataloq" data-toggle="dropdown" aria-expanded="false">
+                        </button> -->
+                            <div class="kataloq_div">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="color: white;"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M1 0.75C1 0.335786 1.33579 0 1.75 0H18.25C18.6642 0 19 0.335786 19 0.75C19 1.16421 18.6642 1.5 18.25 1.5H17.208L19.9446 8.21703C19.9812 8.30688 20 8.40298 20 8.5C20 10.433 18.433 12 16.5 12C14.567 12 13 10.433 13 8.5C13 8.40298 13.0188 8.30688 13.0554 8.21703L15.792 1.5H10.75L10.75 13.5H14.75C15.9926 13.5 17 14.5074 17 15.75C17 16.9926 15.9926 18 14.75 18H5.25293C4.01029 18 3.00293 16.9926 3.00293 15.75C3.00293 14.5074 4.01029 13.5 5.25293 13.5H9.25L9.24999 1.5H4.208L6.94457 8.21703C6.98118 8.30688 7 8.40298 7 8.5C7 10.433 5.433 12 3.5 12C1.567 12 0 10.433 0 8.5C0 8.40298 0.0188248 8.30688 0.0554307 8.21703L2.792 1.5H1.75C1.33579 1.5 1 1.16421 1 0.75ZM4.50293 15.75C4.50293 16.1642 4.83872 16.5 5.25293 16.5H14.75C15.1642 16.5 15.5 16.1642 15.5 15.75C15.5 15.3358 15.1642 15 14.75 15H5.25293C4.83872 15 4.50293 15.3358 4.50293 15.75ZM5.35462 9.25H1.64538C1.94207 9.98296 2.66066 10.5 3.5 10.5C4.33934 10.5 5.05793 9.98296 5.35462 9.25ZM5.13459 7.75L3.5 3.73782L1.86541 7.75H5.13459ZM16.5 10.5C17.3393 10.5 18.0579 9.98296 18.3546 9.25H14.6454C14.9421 9.98296 15.6607 10.5 16.5 10.5ZM14.8654 7.75H18.1346L16.5 3.73782L14.8654 7.75Z"
+                                        d="M5.75 10C6.99264 10 8 11.0074 8 12.25V15.75C8 16.9926 6.99264 18 5.75 18H2.25C1.00736 18 0 16.9926 0 15.75V12.25C0 11.0074 1.00736 10 2.25 10H5.75ZM15.75 10C16.9926 10 18 11.0074 18 12.25V15.75C18 16.9926 16.9926 18 15.75 18H12.25C11.0074 18 10 16.9926 10 15.75V12.25C10 11.0074 11.0074 10 12.25 10H15.75ZM5.75 11.5H2.25C1.83579 11.5 1.5 11.8358 1.5 12.25V15.75C1.5 16.1642 1.83579 16.5 2.25 16.5H5.75C6.16421 16.5 6.5 16.1642 6.5 15.75V12.25C6.5 11.8358 6.16421 11.5 5.75 11.5ZM15.75 11.5H12.25C11.8358 11.5 11.5 11.8358 11.5 12.25V15.75C11.5 16.1642 11.8358 16.5 12.25 16.5H15.75C16.1642 16.5 16.5 16.1642 16.5 15.75V12.25C16.5 11.8358 16.1642 11.5 15.75 11.5ZM5.75 0C6.99264 0 8 1.00736 8 2.25V5.75C8 6.99264 6.99264 8 5.75 8H2.25C1.00736 8 0 6.99264 0 5.75V2.25C0 1.00736 1.00736 0 2.25 0H5.75ZM15.75 0C16.9926 0 18 1.00736 18 2.25V5.75C18 6.99264 16.9926 8 15.75 8H12.25C11.0074 8 10 6.99264 10 5.75V2.25C10 1.00736 11.0074 0 12.25 0H15.75ZM5.75 1.5H2.25C1.83579 1.5 1.5 1.83579 1.5 2.25V5.75C1.5 6.16421 1.83579 6.5 2.25 6.5H5.75C6.16421 6.5 6.5 6.16421 6.5 5.75V2.25C6.5 1.83579 6.16421 1.5 5.75 1.5ZM15.75 1.5H12.25C11.8358 1.5 11.5 1.83579 11.5 2.25V5.75C11.5 6.16421 11.8358 6.5 12.25 6.5H15.75C16.1642 6.5 16.5 6.16421 16.5 5.75V2.25C16.5 1.83579 16.1642 1.5 15.75 1.5Z"
                                         fill="#323232"></path>
                                 </svg>
-                            </a>
-                            <span class="line_icon"></span>
-                            <a href="#">
-                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10.8199 1.57912L9.99919 2.40163L9.17594 1.57838C7.07688 -0.520693 3.67361 -0.520693 1.57455 1.57838C-0.524523 3.67744 -0.524523 7.08071 1.57455 9.17977L9.46991 17.0751C9.76281 17.368 10.2377 17.368 10.5306 17.0751L18.432 9.17831C20.5264 7.07228 20.53 3.67857 18.4306 1.57912C16.3277 -0.523771 12.9228 -0.523767 10.8199 1.57912ZM17.3684 8.12059L10.0002 15.4842L2.63521 8.11911C1.12192 6.60583 1.12192 4.15232 2.63521 2.63904C4.14849 1.12575 6.602 1.12575 8.11528 2.63904L9.47273 3.99648C9.77059 4.29435 10.2553 4.28854 10.5459 3.98363L11.8806 2.63978C13.3977 1.12268 15.8528 1.12268 17.3699 2.63978C18.8836 4.15343 18.881 6.59966 17.3684 8.12059Z"
-                                        fill="#323232"></path>
-                                </svg>
-                            </a>
-                            <span class="line_icon"></span>
-                            <a href="#">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0 1.25C0 0.835786 0.335786 0.5 0.75 0.5H1.30826C2.25873 0.5 2.82782 1.13899 3.15325 1.73299C3.37016 2.12894 3.52708 2.58818 3.64982 3.00395C3.68306 3.00134 3.71674 3 3.7508 3H16.2481C17.0783 3 17.6778 3.79442 17.4502 4.5928L15.6224 11.0019C15.2856 12.1832 14.2062 12.9978 12.9779 12.9978H7.02977C5.79128 12.9978 4.7056 12.1699 4.37783 10.9756L3.61734 8.20455L2.35874 3.95578L2.3567 3.94834C2.201 3.38051 2.05487 2.85005 1.83773 2.4537C1.62686 2.0688 1.45877 2 1.30826 2H0.75C0.335786 2 0 1.66421 0 1.25ZM5.07283 7.84027L5.82434 10.5786C5.97333 11.1215 6.46682 11.4978 7.02977 11.4978H12.9779C13.5362 11.4978 14.0268 11.1275 14.18 10.5906L15.9168 4.5H4.08549L5.05906 7.78682C5.06434 7.8046 5.06892 7.82243 5.07283 7.84027ZM8.5 16C8.5 17.1046 7.60457 18 6.5 18C5.39543 18 4.5 17.1046 4.5 16C4.5 14.8954 5.39543 14 6.5 14C7.60457 14 8.5 14.8954 8.5 16ZM7 16C7 15.7239 6.77614 15.5 6.5 15.5C6.22386 15.5 6 15.7239 6 16C6 16.2761 6.22386 16.5 6.5 16.5C6.77614 16.5 7 16.2761 7 16ZM15.5 16C15.5 17.1046 14.6046 18 13.5 18C12.3954 18 11.5 17.1046 11.5 16C11.5 14.8954 12.3954 14 13.5 14C14.6046 14 15.5 14.8954 15.5 16ZM14 16C14 15.7239 13.7761 15.5 13.5 15.5C13.2239 15.5 13 15.7239 13 16C13 16.2761 13.2239 16.5 13.5 16.5C13.7761 16.5 14 16.2761 14 16Z"
-                                        fill="#323232"></path>
-                                </svg>
-                            </a>
+                                <span>
+                                    Kataloq
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <li>
+                        <div class="input_div">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" name="" id="search_id" placeholder="Axtarış...">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sebet_user_icon">
+                            <div class="down_header_icon">
+                                <a href="#">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 0.75C1 0.335786 1.33579 0 1.75 0H18.25C18.6642 0 19 0.335786 19 0.75C19 1.16421 18.6642 1.5 18.25 1.5H17.208L19.9446 8.21703C19.9812 8.30688 20 8.40298 20 8.5C20 10.433 18.433 12 16.5 12C14.567 12 13 10.433 13 8.5C13 8.40298 13.0188 8.30688 13.0554 8.21703L15.792 1.5H10.75L10.75 13.5H14.75C15.9926 13.5 17 14.5074 17 15.75C17 16.9926 15.9926 18 14.75 18H5.25293C4.01029 18 3.00293 16.9926 3.00293 15.75C3.00293 14.5074 4.01029 13.5 5.25293 13.5H9.25L9.24999 1.5H4.208L6.94457 8.21703C6.98118 8.30688 7 8.40298 7 8.5C7 10.433 5.433 12 3.5 12C1.567 12 0 10.433 0 8.5C0 8.40298 0.0188248 8.30688 0.0554307 8.21703L2.792 1.5H1.75C1.33579 1.5 1 1.16421 1 0.75ZM4.50293 15.75C4.50293 16.1642 4.83872 16.5 5.25293 16.5H14.75C15.1642 16.5 15.5 16.1642 15.5 15.75C15.5 15.3358 15.1642 15 14.75 15H5.25293C4.83872 15 4.50293 15.3358 4.50293 15.75ZM5.35462 9.25H1.64538C1.94207 9.98296 2.66066 10.5 3.5 10.5C4.33934 10.5 5.05793 9.98296 5.35462 9.25ZM5.13459 7.75L3.5 3.73782L1.86541 7.75H5.13459ZM16.5 10.5C17.3393 10.5 18.0579 9.98296 18.3546 9.25H14.6454C14.9421 9.98296 15.6607 10.5 16.5 10.5ZM14.8654 7.75H18.1346L16.5 3.73782L14.8654 7.75Z"
+                                            fill="#323232"></path>
+                                    </svg>
+                                </a>
+                                <span class="line_icon two_line"></span>
+                                <a href="#" class="two_a">
+                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
+                                        xmlns="http://www.w3. class=" odenis_card "2000/svg">
+                                        <path
+                                            d="M10.8199 1.57912L9.99919 2.40163L9.17594 1.57838C7.07688 -0.520693 3.67361 -0.520693 1.57455 1.57838C-0.524523 3.67744 -0.524523 7.08071 1.57455 9.17977L9.46991 17.0751C9.76281 17.368 10.2377 17.368 10.5306 17.0751L18.432 9.17831C20.5264 7.07228 20.53 3.67857 18.4306 1.57912C16.3277 -0.523771 12.9228 -0.523767 10.8199 1.57912ZM17.3684 8.12059L10.0002 15.4842L2.63521 8.11911C1.12192 6.60583 1.12192 4.15232 2.63521 2.63904C4.14849 1.12575 6.602 1.12575 8.11528 2.63904L9.47273 3.99648C9.77059 4.29435 10.2553 4.28854 10.5459 3.98363L11.8806 2.63978C13.3977 1.12268 15.8528 1.12268 17.3699 2.63978C18.8836 4.15343 18.881 6.59966 17.3684 8.12059Z"
+                                            fill="#323232"></path>
+                                    </svg>
+                                </a>
+                                <span class="line_icon"></span>
+                                <a href="#">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 1.25C0 0.835786 0.335786 0.5 0.75 0.5H1.30826C2.25873 0.5 2.82782 1.13899 3.15325 1.73299C3.37016 2.12894 3.52708 2.58818 3.64982 3.00395C3.68306 3.00134 3.71674 3 3.7508 3H16.2481C17.0783 3 17.6778 3.79442 17.4502 4.5928L15.6224 11.0019C15.2856 12.1832 14.2062 12.9978 12.9779 12.9978H7.02977C5.79128 12.9978 4.7056 12.1699 4.37783 10.9756L3.61734 8.20455L2.35874 3.95578L2.3567 3.94834C2.201 3.38051 2.05487 2.85005 1.83773 2.4537C1.62686 2.0688 1.45877 2 1.30826 2H0.75C0.335786 2 0 1.66421 0 1.25ZM5.07283 7.84027L5.82434 10.5786C5.97333 11.1215 6.46682 11.4978 7.02977 11.4978H12.9779C13.5362 11.4978 14.0268 11.1275 14.18 10.5906L15.9168 4.5H4.08549L5.05906 7.78682C5.06434 7.8046 5.06892 7.82243 5.07283 7.84027ZM8.5 16C8.5 17.1046 7.60457 18 6.5 18C5.39543 18 4.5 17.1046 4.5 16C4.5 14.8954 5.39543 14 6.5 14C7.60457 14 8.5 14.8954 8.5 16ZM7 16C7 15.7239 6.77614 15.5 6.5 15.5C6.22386 15.5 6 15.7239 6 16C6 16.2761 6.22386 16.5 6.5 16.5C6.77614 16.5 7 16.2761 7 16ZM15.5 16C15.5 17.1046 14.6046 18 13.5 18C12.3954 18 11.5 17.1046 11.5 16C11.5 14.8954 12.3954 14 13.5 14C14.6046 14 15.5 14.8954 15.5 16ZM14 16C14 15.7239 13.7761 15.5 13.5 15.5C13.2239 15.5 13 15.7239 13 16C13 16.2761 13.2239 16.5 13.5 16.5C13.7761 16.5 14 16.2761 14 16Z"
+                                            fill="#323232"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- </div> -->
     </header>
     <section class="first_section">
-        <div class="container">
-            <div class="product_name">
-                <div>
-                    <h3>
-                        iPhone 14 128 GB Yellow
-                    </h3>
-                </div>
-                <div>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div>
-                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1 0.75C1 0.335786 1.33579 0 1.75 0H18.25C18.6642 0 19 0.335786 19 0.75C19 1.16421 18.6642 1.5 18.25 1.5H17.208L19.9446 8.21703C19.9812 8.30688 20 8.40298 20 8.5C20 10.433 18.433 12 16.5 12C14.567 12 13 10.433 13 8.5C13 8.40298 13.0188 8.30688 13.0554 8.21703L15.792 1.5H10.75L10.75 13.5H14.75C15.9926 13.5 17 14.5074 17 15.75C17 16.9926 15.9926 18 14.75 18H5.25293C4.01029 18 3.00293 16.9926 3.00293 15.75C3.00293 14.5074 4.01029 13.5 5.25293 13.5H9.25L9.24999 1.5H4.208L6.94457 8.21703C6.98118 8.30688 7 8.40298 7 8.5C7 10.433 5.433 12 3.5 12C1.567 12 0 10.433 0 8.5C0 8.40298 0.0188248 8.30688 0.0554307 8.21703L2.792 1.5H1.75C1.33579 1.5 1 1.16421 1 0.75ZM4.50293 15.75C4.50293 16.1642 4.83872 16.5 5.25293 16.5H14.75C15.1642 16.5 15.5 16.1642 15.5 15.75C15.5 15.3358 15.1642 15 14.75 15H5.25293C4.83872 15 4.50293 15.3358 4.50293 15.75ZM5.35462 9.25H1.64538C1.94207 9.98296 2.66066 10.5 3.5 10.5C4.33934 10.5 5.05793 9.98296 5.35462 9.25ZM5.13459 7.75L3.5 3.73782L1.86541 7.75H5.13459ZM16.5 10.5C17.3393 10.5 18.0579 9.98296 18.3546 9.25H14.6454C14.9421 9.98296 15.6607 10.5 16.5 10.5ZM14.8654 7.75H18.1346L16.5 3.73782L14.8654 7.75Z"
-                            fill="#323232"></path>
-                    </svg>
-                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M10.8199 1.57912L9.99919 2.40163L9.17594 1.57838C7.07688 -0.520693 3.67361 -0.520693 1.57455 1.57838C-0.524523 3.67744 -0.524523 7.08071 1.57455 9.17977L9.46991 17.0751C9.76281 17.368 10.2377 17.368 10.5306 17.0751L18.432 9.17831C20.5264 7.07228 20.53 3.67857 18.4306 1.57912C16.3277 -0.523771 12.9228 -0.523767 10.8199 1.57912ZM17.3684 8.12059L10.0002 15.4842L2.63521 8.11911C1.12192 6.60583 1.12192 4.15232 2.63521 2.63904C4.14849 1.12575 6.602 1.12575 8.11528 2.63904L9.47273 3.99648C9.77059 4.29435 10.2553 4.28854 10.5459 3.98363L11.8806 2.63978C13.3977 1.12268 15.8528 1.12268 17.3699 2.63978C18.8836 4.15343 18.881 6.59966 17.3684 8.12059Z"
-                            fill="#323232"></path>
-                    </svg>
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 1.25C0 0.835786 0.335786 0.5 0.75 0.5H1.30826C2.25873 0.5 2.82782 1.13899 3.15325 1.73299C3.37016 2.12894 3.52708 2.58818 3.64982 3.00395C3.68306 3.00134 3.71674 3 3.7508 3H16.2481C17.0783 3 17.6778 3.79442 17.4502 4.5928L15.6224 11.0019C15.2856 12.1832 14.2062 12.9978 12.9779 12.9978H7.02977C5.79128 12.9978 4.7056 12.1699 4.37783 10.9756L3.61734 8.20455L2.35874 3.95578L2.3567 3.94834C2.201 3.38051 2.05487 2.85005 1.83773 2.4537C1.62686 2.0688 1.45877 2 1.30826 2H0.75C0.335786 2 0 1.66421 0 1.25ZM5.07283 7.84027L5.82434 10.5786C5.97333 11.1215 6.46682 11.4978 7.02977 11.4978H12.9779C13.5362 11.4978 14.0268 11.1275 14.18 10.5906L15.9168 4.5H4.08549L5.05906 7.78682C5.06434 7.8046 5.06892 7.82243 5.07283 7.84027ZM8.5 16C8.5 17.1046 7.60457 18 6.5 18C5.39543 18 4.5 17.1046 4.5 16C4.5 14.8954 5.39543 14 6.5 14C7.60457 14 8.5 14.8954 8.5 16ZM7 16C7 15.7239 6.77614 15.5 6.5 15.5C6.22386 15.5 6 15.7239 6 16C6 16.2761 6.22386 16.5 6.5 16.5C6.77614 16.5 7 16.2761 7 16ZM15.5 16C15.5 17.1046 14.6046 18 13.5 18C12.3954 18 11.5 17.1046 11.5 16C11.5 14.8954 12.3954 14 13.5 14C14.6046 14 15.5 14.8954 15.5 16ZM14 16C14 15.7239 13.7761 15.5 13.5 15.5C13.2239 15.5 13 15.7239 13 16C13 16.2761 13.2239 16.5 13.5 16.5C13.7761 16.5 14 16.2761 14 16Z"
-                            fill="#323232"></path>
-                    </svg>
-                </div>
+        <!-- <div class="container"> -->
+        <div class="product_name">
+            <div>
+                <h3>
+                    iPhone 14 128 GB Yellow
+                </h3>
+            </div>
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div>
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1 0.75C1 0.335786 1.33579 0 1.75 0H18.25C18.6642 0 19 0.335786 19 0.75C19 1.16421 18.6642 1.5 18.25 1.5H17.208L19.9446 8.21703C19.9812 8.30688 20 8.40298 20 8.5C20 10.433 18.433 12 16.5 12C14.567 12 13 10.433 13 8.5C13 8.40298 13.0188 8.30688 13.0554 8.21703L15.792 1.5H10.75L10.75 13.5H14.75C15.9926 13.5 17 14.5074 17 15.75C17 16.9926 15.9926 18 14.75 18H5.25293C4.01029 18 3.00293 16.9926 3.00293 15.75C3.00293 14.5074 4.01029 13.5 5.25293 13.5H9.25L9.24999 1.5H4.208L6.94457 8.21703C6.98118 8.30688 7 8.40298 7 8.5C7 10.433 5.433 12 3.5 12C1.567 12 0 10.433 0 8.5C0 8.40298 0.0188248 8.30688 0.0554307 8.21703L2.792 1.5H1.75C1.33579 1.5 1 1.16421 1 0.75ZM4.50293 15.75C4.50293 16.1642 4.83872 16.5 5.25293 16.5H14.75C15.1642 16.5 15.5 16.1642 15.5 15.75C15.5 15.3358 15.1642 15 14.75 15H5.25293C4.83872 15 4.50293 15.3358 4.50293 15.75ZM5.35462 9.25H1.64538C1.94207 9.98296 2.66066 10.5 3.5 10.5C4.33934 10.5 5.05793 9.98296 5.35462 9.25ZM5.13459 7.75L3.5 3.73782L1.86541 7.75H5.13459ZM16.5 10.5C17.3393 10.5 18.0579 9.98296 18.3546 9.25H14.6454C14.9421 9.98296 15.6607 10.5 16.5 10.5ZM14.8654 7.75H18.1346L16.5 3.73782L14.8654 7.75Z"
+                        fill="#323232"></path>
+                </svg>
+                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.8199 1.57912L9.99919 2.40163L9.17594 1.57838C7.07688 -0.520693 3.67361 -0.520693 1.57455 1.57838C-0.524523 3.67744 -0.524523 7.08071 1.57455 9.17977L9.46991 17.0751C9.76281 17.368 10.2377 17.368 10.5306 17.0751L18.432 9.17831C20.5264 7.07228 20.53 3.67857 18.4306 1.57912C16.3277 -0.523771 12.9228 -0.523767 10.8199 1.57912ZM17.3684 8.12059L10.0002 15.4842L2.63521 8.11911C1.12192 6.60583 1.12192 4.15232 2.63521 2.63904C4.14849 1.12575 6.602 1.12575 8.11528 2.63904L9.47273 3.99648C9.77059 4.29435 10.2553 4.28854 10.5459 3.98363L11.8806 2.63978C13.3977 1.12268 15.8528 1.12268 17.3699 2.63978C18.8836 4.15343 18.881 6.59966 17.3684 8.12059Z"
+                        fill="#323232"></path>
+                </svg>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 1.25C0 0.835786 0.335786 0.5 0.75 0.5H1.30826C2.25873 0.5 2.82782 1.13899 3.15325 1.73299C3.37016 2.12894 3.52708 2.58818 3.64982 3.00395C3.68306 3.00134 3.71674 3 3.7508 3H16.2481C17.0783 3 17.6778 3.79442 17.4502 4.5928L15.6224 11.0019C15.2856 12.1832 14.2062 12.9978 12.9779 12.9978H7.02977C5.79128 12.9978 4.7056 12.1699 4.37783 10.9756L3.61734 8.20455L2.35874 3.95578L2.3567 3.94834C2.201 3.38051 2.05487 2.85005 1.83773 2.4537C1.62686 2.0688 1.45877 2 1.30826 2H0.75C0.335786 2 0 1.66421 0 1.25ZM5.07283 7.84027L5.82434 10.5786C5.97333 11.1215 6.46682 11.4978 7.02977 11.4978H12.9779C13.5362 11.4978 14.0268 11.1275 14.18 10.5906L15.9168 4.5H4.08549L5.05906 7.78682C5.06434 7.8046 5.06892 7.82243 5.07283 7.84027ZM8.5 16C8.5 17.1046 7.60457 18 6.5 18C5.39543 18 4.5 17.1046 4.5 16C4.5 14.8954 5.39543 14 6.5 14C7.60457 14 8.5 14.8954 8.5 16ZM7 16C7 15.7239 6.77614 15.5 6.5 15.5C6.22386 15.5 6 15.7239 6 16C6 16.2761 6.22386 16.5 6.5 16.5C6.77614 16.5 7 16.2761 7 16ZM15.5 16C15.5 17.1046 14.6046 18 13.5 18C12.3954 18 11.5 17.1046 11.5 16C11.5 14.8954 12.3954 14 13.5 14C14.6046 14 15.5 14.8954 15.5 16ZM14 16C14 15.7239 13.7761 15.5 13.5 15.5C13.2239 15.5 13 15.7239 13 16C13 16.2761 13.2239 16.5 13.5 16.5C13.7761 16.5 14 16.2761 14 16Z"
+                        fill="#323232"></path>
+                </svg>
             </div>
         </div>
+        <!-- </div> -->
         <div class="img_product">
-            <div class="product_img_div">
-
+            <div class="product_img_left_div">
+                <div>
+                    <img src="https://kontakt.az/media/catalog/product/cache/b34559cb8eb520f2bea0d3245ba154fd/t/m/tm-dg-sbp-1105-sm-2448_1_.png"
+                        alt="">
+                </div>
             </div>
             <div class="product_right_div">
-
+                <div class="salam_id">
+                    <div class="mehsul_kodu">
+                        <span>
+                            Məhsul mövcuddur
+                        </span>
+                        <span>SKU: TM-DG-SBP-1105-SM-2448</span>
+                    </div>
+                    <div class="price_kart">
+                        <div>
+                            <span>359,99 ₼</span>
+                        </div>
+                        <div class="img_card">
+                            <span>Bizdə keçərlidir</span>
+                            <div>
+                                <img src="data:image/jpeg;base64,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"
+                                    alt="">
+                                <span>
+                                    12 м 30,00 ₼
+                                </span>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hisseli_alis">
+                    <span>Hissəli alış kalkulyatoru</span>
+                    <span>Şərtlər endirimsiz qiymətə tətbiq olunur</span>
+                    <div class="calculator">
+                        <div class="buttonContainer">
+                            <button id="btn1" class="krediButton" value="6">6 Ay</button>
+                            <button class="krediButton" value="9">9 Ay</button>
+                            <button class="krediButton" value="12">12 Ay</button>
+                            <button class="krediButton" value="15">15 Ay</button>
+                            <button class="krediButton" value="18">18 Ay</button>
+                        </div>
+                        <div class="ayliq_fiyat_div">
+                            <p>Aylıq ödəniş</p>
+                            <span id="fiyatGosterici"></span>
+                        </div>
+                        <p> <span id="secilenAy">3</span></p>
+                    </div>
+                    <div class="sebet_klik_btn">
+                        <button>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 4.25C2.5 3.83579 2.83579 3.5 3.25 3.5H3.80826C4.75873 3.5 5.32782 4.13899 5.65325 4.73299C5.87016 5.12894 6.02708 5.58818 6.14982 6.00395C6.18306 6.00134 6.21674 6 6.2508 6H18.7481C19.5783 6 20.1778 6.79442 19.9502 7.5928L18.1224 14.0019C17.7856 15.1832 16.7062 15.9978 15.4779 15.9978H9.52977C8.29128 15.9978 7.2056 15.1699 6.87783 13.9756L6.11734 11.2045L4.85874 6.95578L4.8567 6.94834C4.701 6.38051 4.55487 5.85005 4.33773 5.4537C4.12686 5.0688 3.95877 5 3.80826 5H3.25C2.83579 5 2.5 4.66421 2.5 4.25ZM7.57283 10.8403L8.32434 13.5786C8.47333 14.1215 8.96682 14.4978 9.52977 14.4978H15.4779C16.0362 14.4978 16.5268 14.1275 16.68 13.5906L18.4168 7.5H6.58549L7.55906 10.7868C7.56434 10.8046 7.56892 10.8224 7.57283 10.8403ZM11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19ZM9.5 19C9.5 18.7239 9.27614 18.5 9 18.5C8.72386 18.5 8.5 18.7239 8.5 19C8.5 19.2761 8.72386 19.5 9 19.5C9.27614 19.5 9.5 19.2761 9.5 19ZM18 19C18 20.1046 17.1046 21 16 21C14.8954 21 14 20.1046 14 19C14 17.8954 14.8954 17 16 17C17.1046 17 18 17.8954 18 19ZM16.5 19C16.5 18.7239 16.2761 18.5 16 18.5C15.7239 18.5 15.5 18.7239 15.5 19C15.5 19.2761 15.7239 19.5 16 19.5C16.2761 19.5 16.5 19.2761 16.5 19Z"
+                                    fill="white"></path>
+                            </svg>
+                            Səbətə əlavə et</button>
+                        <button>Bir kliklə al</button>
+                    </div>
+                    <div class="elave_xidmet">
+                        <span>Əlavə xidmətlər:</span>
+                        <button id="popupBtn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 8C4 7.72386 4.22386 7.5 4.5 7.5H7.5V4.5C7.5 4.22386 7.72386 4 8 4C8.27614 4 8.5 4.22386 8.5 4.5V7.5H11.5C11.7761 7.5 12 7.72386 12 8C12 8.27614 11.7761 8.5 11.5 8.5H8.5V11.5C8.5 11.7761 8.27614 12 8 12C7.72386 12 7.5 11.7761 7.5 11.5V8.5H4.5C4.22386 8.5 4 8.27614 4 8ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15Z"
+                                    fill="#323232"></path>
+                            </svg>
+                            Zəmanət
+                        </button>
+                    </div>
+                    <div class="popup-overlay" id="popupOverlay"></div>
+                    <div class="popup-content" id="popupContent">
+                        <button class="close-popup" id="closePopup">&times;</button>
+                        <h2>Popup Content</h2>
+                        <p>This is the content inside the popup.</p>
+                    </div>
+                
+                </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container2">
+            <div class="footer_div">
+                <div class="elaqe">
+                    <h4>Əlaqə</h4>
+                    <h3>*6060</h3>
+                    <span>Biz xəritədə</span>
+                    <div class="visa_master">
+                        <span>
+                            <svg width="36" height="12" viewBox="0 0 36 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M33.333 11.8268L32.9955 10.0871H29.2245L28.6245 11.8144L25.602 11.8206C27.0409 8.25331 28.4829 4.68733 29.928 1.12268C30.174 0.518041 30.6105 0.21031 31.254 0.213403C31.746 0.218042 32.5485 0.218041 33.663 0.214948L36 11.8222L33.333 11.8268ZM30.0735 7.70412H32.5035L31.596 3.3433L30.0735 7.70412ZM10.59 0.211856L13.629 0.214948L8.931 11.8284L5.8545 11.8253C5.08087 8.75771 4.31687 5.68759 3.5625 2.61495C3.4125 2.00258 3.1155 1.57423 2.544 1.37165C1.69984 1.08004 0.851754 0.800629 0 0.533506L0 0.216495H4.8555C5.6955 0.216495 6.186 0.635567 6.3435 1.49536C6.5025 2.3567 6.9015 4.54948 7.5435 8.07371L10.59 0.211856ZM17.805 0.214948L15.402 11.8253L12.51 11.8222L14.91 0.211856L17.805 0.214948V0.214948ZM23.67 0C24.5355 0 25.626 0.278351 26.253 0.533506L25.746 2.94124C25.179 2.70619 24.246 2.38918 23.4615 2.4C22.3215 2.4201 21.6165 2.9134 21.6165 3.3866C21.6165 4.1567 22.8405 4.54484 24.1005 5.38608C25.539 6.34484 25.728 7.20619 25.71 8.14175C25.6905 10.084 24.1005 12 20.7465 12C19.2165 11.9768 18.6645 11.8438 17.4165 11.3876L17.9445 8.87474C19.215 9.42371 19.7535 9.59845 20.8395 9.59845C21.834 9.59845 22.6875 9.18402 22.695 8.46186C22.701 7.94845 22.395 7.6933 21.279 7.05928C20.163 6.42371 18.597 5.54381 18.618 3.77783C18.6435 1.51701 20.721 0 23.6715 0H23.67Z"
+                                    fill="#323232"></path>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg width="30" height="18" viewBox="0 0 30 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9995 1.87205C16.0791 2.71945 16.9517 3.80132 17.5514 5.03579C18.1511 6.27026 18.4621 7.62497 18.4609 8.99738C18.4617 10.3694 18.1505 11.7235 17.5508 12.9575C16.9512 14.1915 16.0787 15.2729 14.9995 16.1201C13.9201 15.2728 13.0476 14.1911 12.4479 12.9569C11.8483 11.7227 11.5372 10.3682 11.5382 8.99605C11.5372 7.62386 11.8483 6.26941 12.4479 5.03519C13.0476 3.80097 13.9201 2.71931 14.9995 1.87205V1.87205ZM13.8395 1.09605C12.6968 2.07148 11.7795 3.28341 11.151 4.64809C10.5226 6.01276 10.1979 7.49762 10.1995 9.00005C10.198 10.5018 10.5224 11.986 11.1504 13.3502C11.7784 14.7144 12.6949 15.926 13.8369 16.9014C12.4574 17.6758 10.8992 18.0756 9.3173 18.0612C7.73538 18.0468 6.18479 17.6186 4.81965 16.8192C3.45451 16.0198 2.32238 14.877 1.53579 13.5044C0.749193 12.1318 0.335537 10.5773 0.335938 8.9953C0.336338 7.41332 0.750781 5.85899 1.53807 4.48682C2.32536 3.11465 3.45807 1.97243 4.82361 1.1737C6.18915 0.374971 7.73996 -0.052448 9.32189 -0.0660701C10.9038 -0.0796923 12.4618 0.320957 13.8408 1.09605H13.8395ZM16.1622 16.9014C17.3041 15.926 18.2207 14.7144 18.8487 13.3502C19.4767 11.986 19.8011 10.5018 19.7995 9.00005C19.8011 7.49762 19.4765 6.01276 18.848 4.64809C18.2195 3.28341 17.3022 2.07148 16.1595 1.09605C17.5386 0.320957 19.0966 -0.0796923 20.6785 -0.0660701C22.2604 -0.052448 23.8112 0.374971 25.1768 1.1737C26.5423 1.97243 27.675 3.11465 28.4623 4.48682C29.2496 5.85899 29.664 7.41332 29.6644 8.9953C29.6648 10.5773 29.2512 12.1318 28.4646 13.5044C27.678 14.877 26.5459 16.0198 25.1807 16.8192C23.8156 17.6186 22.265 18.0468 20.6831 18.0612C19.1011 18.0756 17.543 17.6758 16.1635 16.9014H16.1622Z"
+                                    fill="#323232"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="sirket">
+                    <h3>
+                        Şirkət
+                    </h3>
+                    <span>
+                        <a href="">
+                            Şirkət haqqında
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Karyera
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            "Qarabağ" proqramı
+                        </a>
+                    </span>
+                </div>
+                <div class="sirket">
+                    <h3>
+                        Məlumat
+                    </h3>
+                    <span>
+                        <a href="">
+                            Konfidensiallıq siyasəti
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Hissə-hissə ödəniş şərtləri
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Geri qaytarma siyasəti
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Zəmanətlər
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Ən yaxşı qiymətə zəmanət!
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Kontakt TV
+                        </a>
+                    </span>
+                </div>
+                <div class="sirket">
+                    <h3>
+                        Müştərilər üçün
+                    </h3>
+                    <span>
+                        <a href="">
+                            Çatdırılma və ödəmə
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Şikayətlərin idarəolunması siyasəti
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Saytın istifadə şərtləri
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Aylıq ödənişlərin həyata keçirilməsi
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            Korporativ satışlar
+                        </a>
+                    </span>
+                </div>
+                <div class="bizimle_qalin">
+                    <h3>
+                        Bizimlə qalın:
+                    </h3>
+                    <div class="footer_icons">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
+                                fill="#323232"></path>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.9968 7.9983C9.79333 7.9983 7.99515 9.79651 7.99515 12C7.99515 14.2035 9.79333 16.0017 11.9968 16.0017C14.2002 16.0017 15.9984 14.2035 15.9984 12C15.9984 9.79651 14.2002 7.9983 11.9968 7.9983ZM23.9987 12C23.9987 10.3429 24.0137 8.70077 23.9206 7.04665C23.8275 5.12536 23.3893 3.4202 21.9843 2.01525C20.5764 0.607302 18.8743 0.172008 16.953 0.0789456C15.2959 -0.0141173 13.6539 0.000892936 11.9998 0.000892936C10.3427 0.000892936 8.70061 -0.0141173 7.04652 0.0789456C5.12526 0.172008 3.42014 0.610305 2.01522 2.01525C0.607291 3.42321 0.172005 5.12536 0.0789442 7.04665C-0.014117 8.70377 0.000892919 10.3459 0.000892919 12C0.000892919 13.6541 -0.014117 15.2992 0.0789442 16.9533C0.172005 18.8746 0.610293 20.5798 2.01522 21.9847C3.42314 23.3927 5.12526 23.828 7.04652 23.9211C8.70361 24.0141 10.3457 23.9991 11.9998 23.9991C13.6569 23.9991 15.2989 24.0141 16.953 23.9211C18.8743 23.828 20.5794 23.3897 21.9843 21.9847C23.3923 20.5768 23.8275 18.8746 23.9206 16.9533C24.0167 15.2992 23.9987 13.6571 23.9987 12ZM11.9968 18.1572C8.58954 18.1572 5.83973 15.4073 5.83973 12C5.83973 8.5927 8.58954 5.84284 11.9968 5.84284C15.404 5.84284 18.1538 8.5927 18.1538 12C18.1538 15.4073 15.404 18.1572 11.9968 18.1572ZM18.406 7.02864C17.6105 7.02864 16.968 6.38621 16.968 5.59067C16.968 4.79513 17.6105 4.1527 18.406 4.1527C19.2015 4.1527 19.8439 4.79513 19.8439 5.59067C19.8442 5.77957 19.8071 5.96667 19.735 6.14124C19.6628 6.31581 19.5569 6.47442 19.4233 6.608C19.2897 6.74157 19.1311 6.84748 18.9565 6.91967C18.782 6.99185 18.5949 7.02888 18.406 7.02864Z"
+                                fill="#323232"></path>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.0037 11.7913L11.1963 10.4813C10.9513 10.3675 10.75 10.495 10.75 10.7662V13.2338C10.75 13.505 10.9513 13.6325 11.1963 13.5188L14.0025 12.2087C14.2488 12.0938 14.2487 11.9063 14.0037 11.7913ZM12 0C5.3725 0 0 5.3725 0 12C0 18.6275 5.3725 24 12 24C18.6275 24 24 18.6275 24 12C24 5.3725 18.6275 0 12 0ZM12 16.875C5.8575 16.875 5.75 16.3213 5.75 12C5.75 7.67875 5.8575 7.125 12 7.125C18.1425 7.125 18.25 7.67875 18.25 12C18.25 16.3213 18.1425 16.875 12 16.875Z"
+                                fill="#323232"></path>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12ZM12.43 8.859C11.263 9.344 8.93 10.349 5.432 11.873C4.864 12.099 4.566 12.32 4.539 12.536C4.493 12.902 4.951 13.046 5.573 13.241C5.658 13.268 5.746 13.295 5.836 13.325C6.449 13.524 7.273 13.757 7.701 13.766C8.09 13.774 8.524 13.614 9.003 13.286C12.271 11.079 13.958 9.964 14.064 9.94C14.139 9.923 14.243 9.901 14.313 9.964C14.383 10.026 14.376 10.144 14.369 10.176C14.323 10.369 12.529 12.038 11.599 12.902C11.309 13.171 11.104 13.362 11.062 13.406C10.968 13.503 10.872 13.596 10.78 13.685C10.21 14.233 9.784 14.645 10.804 15.317C11.294 15.64 11.686 15.907 12.077 16.173C12.504 16.464 12.93 16.754 13.482 17.116C13.622 17.208 13.756 17.303 13.887 17.396C14.384 17.751 14.831 18.069 15.383 18.019C15.703 17.989 16.035 17.688 16.203 16.789C16.6 14.663 17.382 10.059 17.563 8.161C17.574 8.00341 17.5673 7.84509 17.543 7.689C17.5285 7.56293 17.4671 7.44693 17.371 7.364C17.228 7.247 17.006 7.222 16.906 7.224C16.455 7.232 15.763 7.473 12.43 8.859Z"
+                                fill="#323232"></path>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2051 5.54986C18.615 -0.000183464 11.2852 -1.6502 5.60089 1.79983C0.0661373 5.24986 -1.72892 12.7499 1.86119 18.3L2.16037 18.75L0.963664 23.25L5.4513 22.05L5.90006 22.35C7.8447 23.4 9.93893 24 12.0332 24C14.277 24 16.5208 23.4 18.4654 22.2C24.0002 18.6 25.6456 11.2499 22.2051 5.54986ZM19.0638 17.0999C18.4654 18 17.7175 18.6 16.6704 18.75C16.072 18.75 15.3241 19.05 12.3323 17.85C9.78934 16.6499 7.69511 14.6999 6.19924 12.4499C5.30171 11.3999 4.85295 10.0499 4.70336 8.69988C4.70336 7.49987 5.15212 6.44987 5.90006 5.69986C6.19924 5.39986 6.49841 5.24986 6.79759 5.24986H7.54553C7.8447 5.24986 8.14388 5.24986 8.29347 5.84986C8.59264 6.59987 9.34058 8.39988 9.34058 8.54988C9.49017 8.69988 9.49017 8.99989 9.34058 9.14989C9.49017 9.44989 9.34058 9.74989 9.19099 9.89989C9.04141 10.0499 8.89182 10.3499 8.74223 10.4999C8.44305 10.6499 8.29347 10.9499 8.44305 11.2499C9.0414 12.1499 9.78934 13.0499 10.5373 13.7999C11.4348 14.5499 12.3323 15.1499 13.3794 15.5999C13.6786 15.7499 13.9778 15.7499 14.1274 15.4499C14.277 15.1499 15.0249 14.3999 15.3241 14.0999C15.6233 13.7999 15.7729 13.7999 16.072 13.9499L18.4654 15.1499C18.7646 15.2999 19.0638 15.4499 19.2134 15.5999C19.363 16.0499 19.363 16.6499 19.0638 17.0999Z"
+                                fill="#323232"></path>
+                        </svg>
+                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.4541 3.76C17.4541 3.76 18.1696 4.42667 17.4541 3.76C16.495 2.7195 15.9664 1.38324 15.9668 0H11.6314V16.5333C11.5979 17.428 11.2005 18.2755 10.5226 18.8973C9.8448 19.519 8.93953 19.8665 7.99745 19.8667C6.0051 19.8667 4.34949 18.32 4.34949 16.4C4.34949 14.1067 6.67857 12.3867 9.07781 13.0933V8.88C4.23725 8.26667 0 11.84 0 16.4C0 20.84 3.87245 24 7.98342 24C12.389 24 15.9668 20.6 15.9668 16.4V8.01333C17.7249 9.21313 19.8356 9.85686 22 9.85333V5.73333C22 5.73333 19.3622 5.85333 17.4541 3.76Z"
+                                fill="#323232"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="footer_bottom">
+                    <span>
+                        © Kontakt Home 2024
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
