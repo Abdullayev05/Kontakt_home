@@ -887,3 +887,239 @@ footer {
 .rating input {
     display: none;
 }
+
+
+@media only screen and (max-width: 1440px) {
+    .li_icon_admin {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container2 {
+        width: 75%;
+    }
+
+    .img_spans img {
+        width: 105px;
+        height: 23px;
+    }
+
+    .img_spans .three_spans {
+        padding-left: 50px;
+    }
+
+    .span_btn_select a:nth-child(1) {
+        display: flex;
+    }
+
+    .three_spans span {
+        font-size: 16px;
+    }
+
+    .input_div input {
+        width: 550px;
+        background-color: transparent;
+    }
+
+    .one_section .corner {
+        display: none;
+    }
+
+    .one_section #center img {
+        width: 1024px;
+        height: 1024px;
+    }
+
+    .swiper1 {
+        height: 1024px;
+        width: 1024px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .melumatlar .four_div {
+        width: 225px;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .four_div svg {
+        width: 20px;
+        height: 30px;
+    }
+
+    .melumatlar span,
+    .melumatlar h3 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container2 {
+        width: 100%;
+    }
+
+    .img_spans .three_spans {
+        display: none;
+    }
+
+    .span_btn_select button {
+        display: none;
+    }
+
+    .span_btn_select .ayliq_btn {
+        display: none;
+    }
+
+    .footer_div {
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        height: 750px;
+        background-color: #fff;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .melumatlar {
+        overflow: scroll;
+    }
+
+    .down_header_icon a:nth-child(1) {
+        display: none;
+    }
+
+    .down_header_icon .two_a {
+        display: none;
+    }
+
+    .down_header_icon .two_line {
+        display: none;
+    }
+
+    .kataloq_div span {
+        display: none;
+    }
+
+    .swiper1 {
+        width: 768px;
+        height: 768px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .one_section #center img {
+        width: 768px;
+        height: 768px;
+    }
+
+    .satis_buttons div {
+        display: flex;
+        overflow: scroll;
+    }
+
+    #two_section .card {
+        width: 440px;
+        height: 350px;
+    }
+
+    .li_icon_admin {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container2 {
+        width: 100%;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .input_div input {
+        width: 220px;
+    }
+
+    .swiper1 {
+        width: 425px;
+        height: 425px;
+        border-radius: 10px;
+    }
+
+    .one_section #center img {
+        width: 425px;
+        height: 425px;
+    }
+
+    .span_btn_select a:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .span_btn_select select {
+        font-size: 14px;
+    }
+
+    #two_section .card {
+        width: 226px;
+        height: 365px;
+    }
+
+    .li_icon_admin {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container2 {
+        width: 100%;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .li_icon_admin {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container2 {
+        width: 100%;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .li_icon_admin {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .slider-container .slide-button {
+        display: none !important;
+    }
+
+    .slider-container .image-grid {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-container .image-grid .image-item {
+        width: 280px;
+        height: 380px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+}
