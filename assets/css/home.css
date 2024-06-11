@@ -793,6 +793,7 @@ input[type="submit"]:hover {
 .card:hover {
     height: 570px;
     width: 243px;
+    cursor: pointer;
 }
 
 .card_icons {

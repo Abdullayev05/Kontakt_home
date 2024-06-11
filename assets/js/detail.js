@@ -1,116 +1,98 @@
-document.getElementById("krediAy").addEventListener("input", function () {
-  var secilenAy = this.value;
-  document.getElementById("secilenAy").innerHTML = secilenAy;
+var defaultAy = 3;
+document.getElementById("fiyatGosterici").textContent = (359 / defaultAy).toFixed(2) + " ₼";
+
+var krediButtons = document.querySelectorAll(".krediButton");
+
+krediButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        var secilenAy = this.value;
+        document.getElementById("secilenAy").innerHTML = secilenAy;
+
+        var krediAy = parseInt(secilenAy);
+        var fiyat = 359 / krediAy;
+        var fiyatGosterici = document.getElementById("fiyatGosterici");
+        fiyatGosterici.textContent = fiyat.toFixed(2) + " ₼";
+    });
 });
 
-document.getElementById("krediAy").addEventListener("input", function () {
-  var krediAySlider = document.getElementById("krediAy");
-  var krediAy = parseInt(krediAySlider.value);
-  var fiyat = 2849 / krediAy;
-  var fiyatGosterici = document.getElementById("fiyatGosterici");
-  fiyatGosterici.textContent = fiyat.toFixed(2);
-});
 function toggleRedHeart(element) {
-  element.classList.toggle('clicked');
-}
-function togglePopUp() {
-  var popUp = document.getElementById("popUp");
-  if (popUp.style.display === "block") {
-    popUp.style.display = "none";
-  } else {
-    popUp.style.display = "block";
-  }
+    element.classList.toggle('clicked');
 }
 
 function togglePopUp() {
-  var popUp = document.getElementById("popUp");
-  popUp.classList.toggle("active");
-}
-document.getElementById("closeIcon").addEventListener("click", function () {
-  document.querySelector(".pop_up").style.display = "none";
-})
-function toggleRedHeart(event) {
-  event.preventDefault();
-}
-function togglePasswordVisibility(event) {
-  event.preventDefault();
-  let passwordField = document.getElementById("password");
-  let toggleButton = document.getElementById("toggleButton");
-  if (passwordField.type === "password") {
-    passwordField.type = "text";
-    toggleButton.textContent = "Hide";
-  } else {
-    passwordField.type = "password";
-    toggleButton.textContent = "Show";
-  }
-}
-function login(event) {
-  event.preventDefault();
+    var popUp = document.getElementById("popUp");
+    if (popUp.style.display === "block") {
+        popUp.style.display = "none";
+    } else {
+        popUp.style.display = "block";
+    }
 }
 
-function signUp(event) {
-  event.preventDefault();
-}
-$('.memory-button').click(function () {
-  $('.memory-button').css({
-    'background-color': '#FFFFFF',
-    'border': '1px solid #E7E7E7'
-  });
-
-  $(this).css({
-    'background-color': '#ff003c',
-    'border': '1px solid #F58634'
-  });
+$('.krediButton').click(function () {
+    $('.krediButton').css({
+        'background-color': '#E4E2E2',
+        'color': '#4b5563'
+    });
+    $(this).css({
+        'background-color': '#323232',
+        'color': '#fff'
+    });
+    $('#secilenAy').text($(this).val());
 });
-(function () {
-  const heart = document.getElementById('heart');
-  heart.addEventListener('click', function () {
-    heart.classList.toggle('red');
-  });
-})();
-
-document.addEventListener("DOMContentLoaded", function () {
-  var heartIcon = document.querySelector('.red-heart');
-  var popUp = document.getElementById('popUp');
-
-  heartIcon.addEventListener('click', function () {
-    popUp.style.display = 'block';
-  });
+$('#btn1').css({
+    'background-color': '#323232',
+    'color': '#fff'
 });
 
-function togglePopUp() {
-  var popUp = document.getElementById("popUp");
-  if (popUp.style.display === "block") {
-    popUp.style.display = "none";
-  } else {
-    popUp.style.display = "block";
-  }
-}
-
-function togglePopUp() {
-  var popUp = document.getElementById("popUp");
-  popUp.classList.toggle("active");
-}
-document.getElementById("closeIcon").addEventListener("click", function () {
-  document.querySelector(".pop_up").style.display = "none";
-})
-document.getElementById("two_close_icon").addEventListener("click", function () {
-  document.querySelector(".qeydiyyat_pop_up").style.display = "none";
-})
-function toggleRedHeart(event) {
-  event.preventDefault();
-}
-function togglePasswordVisibility(event) {
-  event.preventDefault();
-  let passwordField = document.getElementById("password");
-  let toggleButton = document.getElementById("toggleButton");
-  if (passwordField.type === "password") {
-    passwordField.type = "text";
-    toggleButton.textContent = "Hide";
-  } else {
-    passwordField.type = "password";
-    toggleButton.textContent = "Show";
-  }
-}
+const popupBtn = document.getElementById('popupBtn');
+const popupOverlay = document.getElementById('popupOverlay');
+const popupContent = document.getElementById('popupContent');
+const closePopup = document.getElementById('closePopup');
+popupBtn.onclick = function() {
+    popupOverlay.style.display = 'block';
+    popupContent.style.display = 'block';
+};
+closePopup.onclick = function() {
+    popupOverlay.style.display = 'none';
+    popupContent.style.display = 'none';
+};
+popupOverlay.onclick = function() {
+    popupOverlay.style.display = 'none';
+    popupContent.style.display = 'none';
+};
 
 
+// function getQueryParam(param) {
+//     const urlParams = new URLSearchParams(window.location.mal.html);
+//     return urlParams.get(param);
+// }
+
+// const productId = getQueryParam('productId');
+
+// fetch('./assets/json/card.json')
+//     .then(response => {
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+//         return response.json();
+//     })
+//     .then(data => {
+//         const product = data.products.find(p => p.id == productId);
+//         if (product) {
+//             const productDetailsDiv = document.getElementById('product-details');
+//             productDetailsDiv.innerHTML = `
+//                 <h1>${product.brand} ${product.model}</h1>
+//                 <img src="${product.image}" alt="${product.title}">
+//                 <p>Price: ${product.price} ₼</p>
+//                 <p>CPU: ${product.cpu}</p>
+//                 <p>RAM: ${product.ram} GB</p>
+//                 <p>SSD: ${product.ssd} GB</p>
+//                 <p>Screen Size: ${product.screenSize}"</p>
+//             `;
+//         } else {
+//             document.getElementById('product-details').innerHTML = '<p>Product not found</p>';
+//         }
+//     })
+//     .catch(error => {
+//         console.error('There was a problem fetching the data:', error);
+//     });
