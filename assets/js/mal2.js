@@ -21,3 +21,9 @@
 //     .catch(error => {
 //         console.error('There was a problem fetching the data:', error);
 //     });
+
+document.getElementById('icon').addEventListener('click', function() {
+    var square = document.createElement('div');
+    square.classList.add('square');
+    document.body.appendChild(square);
+});

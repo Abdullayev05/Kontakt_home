@@ -123,26 +123,34 @@
                                     <div class="cixis_icon">
                                         <i class="fa-solid fa-xmark" id="closeIcon" onclick="togglePopUp()"></i>
                                     </div>
-                                    <h3>Login</h3>
+                                    <h3>Xoş gördük! 👋</h3>
+                                    <p>Üstünlüklərindən faydalanmaq üçün daxil olun!</p>
+                                    <button onclick="window.location.href = 'https://www.facebook.com';"><img src="https://kontakt.az/static/version1718110576/frontend/Swissup/breeze-customized/az_Latn_AZ/Swissup_SocialLogin/images/facebook.svg" alt="">Facebook</button>
+                                    <button onclick="window.location.href = 'https://www.google.com';"><img src="https://kontakt.az/static/version1718110576/frontend/Swissup/breeze-customized/az_Latn_AZ/Swissup_SocialLogin/images/google.svg" alt="">Google</button>
+                                   <div class="line_veya">
+                                      <span>və ya</span>
+                                   </div>
                                     <form>
-                                        <label for="name">Ad:</label>
-                                        <input type="text" id="name" name="name">
-                                        <label for="surname">Soyad:</label>
-                                        <input type="text" id="surname" name="surname">
-                                        <label for="email">E-posta:</label>
+                                        <label for="email"><span>*</span>Elektron poçt </label>
                                         <input type="email" id="email" name="email">
                                         <div class="input_showHide">
-                                            <label for="password">Password:</label>
-                                            <div>
+                                            <label for="email"><span>*</span> Şifrə </label>
+                                            <div style="display: flex; align-items: center;">
                                                 <input type="password" id="password" name="password">
-                                                <button id="toggleButton"
-                                                    onclick="togglePasswordVisibility(event)">Show</button>
+                                                <button id="toggleButton"></button>
+                                                <i class="fa-solid fa-eye" onclick="togglePasswordVisibility(event)" style="cursor: pointer; position: relative; top: -10px;"></i>
                                             </div>
+                                        </div>
+                                        <div class="yadda_saxla">
+                                            <span>
+                                                <input type="checkbox" name="" id="">
+                                            Yadda saxla
+                                            </span>
+                                            <span>Şifrəni unutmusunuz?</span>
                                         </div>
                                         <div class="qeydiyyat_btn">
                                             <div class="login_sign">
-                                                <button onclick="login(event)">Login</button>
-                                                <button onclick="signUp(event)">Sign Up</button>
+                                                <button onclick="login(event)">Daxil ol</button>
                                             </div>
                                         </div>
                                     </form>
