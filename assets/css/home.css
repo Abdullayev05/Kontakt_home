@@ -267,6 +267,7 @@ header ul {
     width: 100%;
     background: #eaeaea;
 }
+
 /* #toggleButton {} */
 .pop_up p {
     font-size: 14px;
@@ -430,6 +431,27 @@ input[type="email"] {
 
 .red-heart.clicked {
     color: #ff003c;
+}
+
+.input_div {
+    display: flex;
+    align-items: center;
+}
+
+.input_div input {
+    margin-left: 8px;
+    padding: 8px;
+    width: 200px;
+}
+
+#results {
+    margin-top: 10px;
+    display: flex;
+}
+
+.result-item {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
 }
 
 .input_div input {
