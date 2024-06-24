@@ -227,7 +227,7 @@ header ul {
     height: 600px;
     padding: 14px 50px 50px;
     margin: 0 auto;
-    margin-top: 11px;
+    margin-top: 21px;
     border: 1px solid #ccc;
     background: #fff;
     overflow-y: scroll;
@@ -509,7 +509,7 @@ input[type="email"] {
     margin: 0 auto;
     display: flex;
     gap: 10px;
-    padding: 137px 39px 0 39px;
+    padding: 150px 39px 0 39px;
 }
 
 .one_section .corner:nth-child(1) {
@@ -798,6 +798,11 @@ input[type="email"] {
     border-radius: 10px;
     height: 60px;
     width: 60px;
+}
+
+.markalar a:hover {
+    background-color: #d8d6d6;
+    transition: 0.5s;
 }
 
 .markalar img {
@@ -1502,10 +1507,10 @@ footer {
     .container2 {
         width: 100%;
     }
-
+/* 
     .container1 {
         width: 100%;
-    }
+    } */
 
     .input_div input {
         width: 220px;
@@ -1533,10 +1538,25 @@ footer {
     #two_section .card {
         width: 226px;
         height: 365px;
+        /* margin-left: 60px; */
     }
 
     .li_icon_admin {
         display: block;
+    }
+
+    .melumatlar {
+        width: 400px;
+    }
+
+    .down_div {
+        width: 400px;
+    }
+
+    .satis_buttons  {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        display: flex;        
     }
 }
 
@@ -1551,6 +1571,21 @@ footer {
 
     .li_icon_admin {
         display: block;
+    }
+
+    .swiper1 {
+        height: 565px;
+        border-radius: 10px;
+        display: flex;
+        gap: 50px;
+    }
+
+    .swiper1 img {
+        height: 565px;
+        width: 565px;
+        border-radius: 10px;
+        display: flex;
+        gap: 50px;
     }
 }
 
