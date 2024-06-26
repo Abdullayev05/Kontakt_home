@@ -206,6 +206,7 @@ header ul {
     width: 100%;
     background: #eaeaea;
 }
+
 /* #toggleButton {} */
 .pop_up p {
     font-size: 14px;
@@ -370,6 +371,105 @@ input[type="email"] {
 .red-heart.clicked {
     color: #ff003c;
 }
+
+
+/* admin_popup */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 58%;
+    top: -4%;
+    width: 300px;
+    /* overflow: auto; */
+    /* background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);  */
+}
+
+.btn_div_modal {
+    width: 117px;
+    height: 39px;
+    border-radius: 10px;
+    border: 1px solid #17a539;
+    color: #17a539;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    background-color: white;
+    /* letter-spacing: -.02em; */
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.btn_div_modal2 {
+    border: 0;
+    width: 79px;
+    height: 37px;
+    color: #323232;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    /* width: 80%; */
+    height: 200px;
+    overflow-y: auto;
+}
+
+.btn_admin_divs {
+    display: flex;
+    margin-top: 20px;
+}
+
+.modal-content div a span {
+    line-height: 30px;
+}
+
+.close_admin {
+    color: #0a0a0a;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.li_icon_admin i {
+    font-size: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.cixis_icon i {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* background-color: #ff003c; */
+}
+
+
+
 .input_div input {
     background: #f3f3f3;
     border-radius: 10px;
@@ -728,6 +828,27 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 30%;
+        top: -4%;
+        /* overflow: auto; */
+        /* background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4);  */
+    }
+
+    /* .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        height: 200px;
+        overflow-y: auto;
+    } */
+
 }
 
 @media only screen and (max-width: 375px) {

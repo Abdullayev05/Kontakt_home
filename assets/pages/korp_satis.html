@@ -22,6 +22,7 @@
     <script defer src="../js/korp_satis.app.js"></script>
     <link rel="stylesheet" href="../css/korp.satis.css">
     <script defer src="../js/mal2.js"></script>
+    <script defer src="../js/admin_icon.js"></script>
 </head>
 
 <body>
@@ -101,6 +102,27 @@
                             <option value="">AZ</option>
                             <option value="">RU</option>
                         </select>
+                        <div class="li_icon_admin">
+                            <i class="fa-regular fa-user" id="icon"></i>
+                        </div>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close_admin"><i class="fa-solid fa-xmark"></i></span>
+                                <div>
+                                    <a href="./magazalar.html">
+                                        <span>Mağazalar</span>
+                                    </a>
+                                    <a href="./korp_satis.html">
+                                        <span>Korporativ satışlar</span>
+                                    </a>
+                                   <div class="btn_admin_divs">
+                                    <div class="btn_div_modal" onclick="openPopup()">Aylıq ödəniş</div>
+                                    <div class="btn_div_modal2" onclick="togglePopUp()">Daxil ol</div>
+                                   </div>
+                                </div>
+                               
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
