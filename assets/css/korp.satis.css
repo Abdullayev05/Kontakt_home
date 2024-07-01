@@ -1013,6 +1013,15 @@ footer {
     .li_icon_admin {
         display: block;
     }
+    #myModal span {
+        color: black;
+    }
+
+    .select_icon {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1055,6 +1064,22 @@ footer {
     .li_icon_admin {
         display: block;
     }
+    #myModal span {
+        color: black;
+    }
+
+    .select_icon {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 30%;
+        top: -4%;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1069,6 +1094,22 @@ footer {
     .li_icon_admin {
         display: block;
     }
+    #myModal span {
+        color: black;
+    }
+
+    .select_icon {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 27%;
+        top: -4%;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1082,6 +1123,15 @@ footer {
 
     .li_icon_admin {
         display: block;
+    }
+    #myModal span {
+        color: black;
+    }
+
+    .select_icon {
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
 }
 

@@ -1503,6 +1503,16 @@ footer {
     .melumatlar h3 {
         font-size: 12px;
     }
+
+    #myModal span {
+        color: black;
+    }
+
+    .select_icon {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1599,6 +1609,15 @@ footer {
         z-index: 1000;
     }
 
+    #myModal span {
+        color: black;
+    }
+
+    .select_icon {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1665,6 +1684,16 @@ footer {
         left: 30%;
         top: -4%;
     }
+
+    #myModal span {
+        color: black;
+    }
+
+    .select_icon {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1693,6 +1722,22 @@ footer {
         border-radius: 10px;
         display: flex;
         gap: 50px;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 27%;
+        top: -4%;
+    }
+    #myModal span {
+        color: black;
+    }
+
+    .select_icon {
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
 }
 
