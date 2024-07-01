@@ -551,6 +551,11 @@ input[type="email"] {
     margin-left: 80px;
 }
 
+.input_div input:hover {
+    background: white;
+    border: 1px solid black;
+}
+
 .input_div {
     position: relative;
 }
@@ -634,7 +639,7 @@ input[type="email"] {
 
 .left_div {
     height: 565px;
-    width: 245px;
+    width: 250px;
     background: #fff;
     border-radius: 10px;
     padding: 15px;
@@ -1488,6 +1493,10 @@ footer {
         margin: 0 auto;
     }
 
+    .melumatlar {
+        overflow: scroll;
+    }
+
     .melumatlar .four_div {
         width: 225px;
         gap: 5px;
@@ -1665,6 +1674,7 @@ footer {
 
     .melumatlar {
         width: 400px;
+        overflow: scroll;
     }
 
     .down_div {
@@ -1723,6 +1733,7 @@ footer {
         display: flex;
         gap: 50px;
     }
+
     .modal {
         display: none;
         position: fixed;
@@ -1730,6 +1741,7 @@ footer {
         left: 27%;
         top: -4%;
     }
+
     #myModal span {
         color: black;
     }
@@ -1738,6 +1750,11 @@ footer {
         display: flex;
         align-items: center;
         gap: 15px;
+    }
+    
+    .melumatlar {
+        width: 400px;
+        overflow: scroll;
     }
 }
 
@@ -1750,6 +1767,10 @@ footer {
         width: 100%;
     }
 
+    .melumatlar {
+        width: 400px;
+        overflow: scroll;
+    }
     .li_icon_admin {
         display: block;
     }

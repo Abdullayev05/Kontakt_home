@@ -486,6 +486,10 @@ input[type="email"] {
     width: 751px;
     margin-left: 80px;
 }
+.input_div input:hover {
+    background: white;
+    border: 1px solid black;
+}
 
 .input_div button {
     border: 0;
