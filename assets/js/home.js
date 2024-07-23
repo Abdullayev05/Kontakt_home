@@ -1,19 +1,3 @@
-(function () {
-  const heart = document.getElementById('heart');
-  heart.addEventListener('click', function () {
-    heart.classList.toggle('red');
-  });
-})();
-
-document.addEventListener("DOMContentLoaded", function () {
-  var heartIcon = document.querySelector('.red-heart');
-  var popUp = document.getElementById('popUp');
-
-  // heartIcon.addEventListener('click', function () {
-  //   popUp.style.display = 'block';
-  // });
-});
-
 function togglePopUp() {
   var popUp = document.getElementById("popUp");
   if (popUp.style.display === "block") {
@@ -75,22 +59,6 @@ document.querySelector('.qeydiyyat_buttn').addEventListener('click', function ()
   qeydiyyatPopUp.style.display = 'none';
 });
 
-$('#btn1').css({
-  'background-color': '#323232',
-  'color': '#fff'
-});
-
-$('.satis_lideri button').click(function () {
-  $('.satis_lideri button').css({
-    'background-color': '#E4E2E2',
-    'color': '#4b5563'
-  });
-
-  $(this).css({
-    'background-color': '#323232',
-    'color': '#fff'
-  });
-});
 
 document.getElementById('video_link').addEventListener('click', function () {
   window.open('https://youtu.be/uK2WbyJx-c4', '_blank');

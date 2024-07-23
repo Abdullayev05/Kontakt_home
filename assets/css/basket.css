@@ -187,7 +187,7 @@ header ul {
     cursor: pointer;
 }
 
-.btn_div_modal2{
+.btn_div_modal2 {
     border: 0;
     width: 79px;
     height: 37px;
@@ -198,7 +198,7 @@ header ul {
     background-color: #f3f3f3;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .modal-content {
@@ -210,10 +210,12 @@ header ul {
     height: 200px;
     overflow-y: auto;
 }
-.btn_admin_divs{
+
+.btn_admin_divs {
     display: flex;
     margin-top: 20px;
 }
+
 .modal-content div a span {
     line-height: 30px;
 }
@@ -226,9 +228,11 @@ header ul {
     display: flex;
     justify-content: flex-end;
 }
+
 .li_icon_admin i {
     font-size: 20px;
 }
+
 .input_div input:hover {
     background: white;
     border: 1px solid black;
@@ -239,6 +243,72 @@ header ul {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+section {
+    padding: 138px 39px 0 39px;
+}
+
+section div:nth-child(1) {
+    width: auto;
+    height: 61px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+section div:nth-child(2) {
+    width: auto;
+    height: 376px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section div span:nth-child(1) {
+    font-weight: 500;
+}
+
+section h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+section button {
+    border: 1px solid #323232;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    background: #fff;
+    max-width: 264px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 48px;
 }
 
 
@@ -414,14 +484,13 @@ input[type="submit"]:hover {
 }
 
 
-
-
 footer {
     height: 400px;
     background-color: #fff;
     /* margin-top: 100px; */
     display: flex;
     flex-direction: column;
+    margin-top: 200px;
 }
 
 .elaqe h3 {

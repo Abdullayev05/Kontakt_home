@@ -228,7 +228,7 @@ header ul {
     height: 600px;
     padding: 14px 50px 50px;
     margin: 0 auto;
-    margin-top: 21px;
+    margin-top: 8px;
     border: 1px solid #ccc;
     background: #fff;
     overflow-y: scroll;
@@ -660,10 +660,26 @@ input[type="email"] {
 
 .left_div ul li {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.left_div span>div:hover {
-    width: 1000px;
+.left_div ul li i {
+    color: #e8e9eb;
+    align-items: center;
+    display: flex;
+    /* height: 20px; */
+    justify-content: center;
+    /* width: 20px; */
+    margin-left: auto;
+}
+
+.left_div ul:hover {
+    color: #FF0000;
+}
+
+.left_div:hover {
+    width: 1200px;
     height: 565px;
     background-color: #fff;
     position: absolute;
@@ -674,6 +690,11 @@ input[type="email"] {
     gap: 15px;
     flex-direction: column;
 }
+
+/* .container1:hover .swiper,
+.container1:hover .right_div {
+    visibility: hidden;
+} */
 
 .left_div span:hover {
     color: #FF0000;
@@ -973,12 +994,14 @@ input[type="email"] {
 .card {
     width: 243px;
     height: 380px;
-    margin-top: 20px;
     border-radius: 10px;
     border: 0;
-    padding-top: 30px;
+    padding-top: 10px;
     text-align: center;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
 }
 
 .card i {
@@ -986,15 +1009,13 @@ input[type="email"] {
 }
 
 .card img {
-    width: 180px;
-    height: 200px;
+    width: 136px;
+    height: 136px;
     margin-top: 22px;
 }
 
 .card:hover {
-    height: 570px;
-    width: 243px;
-    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(50, 50, 50, .2);
 }
 
 .card_icons {
@@ -1051,7 +1072,7 @@ input[type="email"] {
 .slider-container .image-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 18px;
+    gap: 10px;
     font-size: 0;
     list-style: none;
     margin-bottom: 30px;
@@ -1122,23 +1143,40 @@ input[type="email"] {
     width: 1px;
 }
 
+.heart_qeydiyyat {
+    width: 44px;
+    height: 44px;
+    background: #F3F3F3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sebet_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .sebet_btn button {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     text-align: center;
-    /* padding-top: 15px; */
-    background: #f3f3f3;
+    background: #FF003C;
     border-radius: 10px;
-    height: 48px;
-    width: 200px;
+    height: 44px;
+    width: 149px;
     border: 0;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    color: #ffffff;
 }
 
 .sebet_btn button:hover {
-    background-color: #cdcdcd;
+    opacity: .8;
+    background: #ff003c;
     transition: 0.5s;
 }
 
@@ -1173,9 +1211,9 @@ input[type="email"] {
     color: #ff003c;
 }
 
-.card-body {
+/* .card-body {
     text-align: center;
-}
+} */
 
 .card-body h5 {
     font-size: 16px;
@@ -1198,20 +1236,12 @@ input[type="email"] {
 }
 
 .text_dec {
-    /* text-decoration: line-through; */
     font-weight: 700;
     color: #ff003c;
-    font-size: 14px;
-    letter-spacing: -0.02em;
-}
-
-/* .one_price {
-    color: #ff003c;
     font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
     letter-spacing: -0.02em;
-} */
+    padding-top: 30px;
+}
 
 .qeydiyyat_pop_up {
     display: none;
@@ -1278,6 +1308,10 @@ input[type="email"] {
     background-color: #F3F3F3;
 }
 
+.display_Daxil_ol {
+    color: white;
+}
+
 .exit_icon {
     display: flex;
     justify-content: flex-end;
@@ -1294,6 +1328,15 @@ input[type="email"] {
     align-items: center;
     color: #F6F6F6;
     cursor: pointer;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: nowrap;
+    /* overflow-x: auto; */
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
 }
 
 .card .one_price {
@@ -1528,6 +1571,10 @@ footer {
     .container2 {
         width: 100%;
     }
+/* 
+    .container1 {
+        width: 768px;
+    } */
 
     .img_spans .three_spans {
         display: none;
@@ -1557,6 +1604,7 @@ footer {
 
     .melumatlar {
         overflow: scroll;
+        /* width: 768px; */
     }
 
     .down_header_icon a:nth-child(1) {
@@ -1627,17 +1675,39 @@ footer {
         align-items: center;
         gap: 15px;
     }
+
+    .heart_qeydiyyat {
+        height: 36px;
+        width: 36px;
+    }
+
+    .down_div {
+        width: 768px;
+    }
+
+    .sebet_btn button {
+        width: 370px;
+        height: 36px;
+    }
+
+    .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* .three_section {
+        width:800px;
+    } 
+     .input_div input {
+        width: 700px;
+    } */
 }
 
 @media only screen and (max-width: 425px) {
     .container2 {
         width: 100%;
     }
-
-    /* 
-    .container1 {
-        width: 100%;
-    } */
 
     .input_div input {
         width: 220px;
@@ -1704,6 +1774,11 @@ footer {
         align-items: center;
         gap: 15px;
     }
+    
+    .sebet_btn button {
+        width: 150px;
+        height: 36px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1751,7 +1826,7 @@ footer {
         align-items: center;
         gap: 15px;
     }
-    
+
     .melumatlar {
         width: 400px;
         overflow: scroll;
@@ -1771,6 +1846,7 @@ footer {
         width: 400px;
         overflow: scroll;
     }
+
     .li_icon_admin {
         display: block;
     }
