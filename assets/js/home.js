@@ -47,19 +47,3 @@ function closePopup() {
   var popup = document.getElementById("popup");
   popup.style.display = "none";
 }
-let heartIcon = document.getElementById('heart');
-let qeydiyyatPopUp = document.querySelector('.qeydiyyat_pop_up');
-
-heartIcon.addEventListener('click', function () {
-  qeydiyyatPopUp.style.display = 'block';
-});
-
-document.querySelector('.qeydiyyat_buttn').addEventListener('click', function () {
-  heartIcon.classList.add('heart_red');
-  qeydiyyatPopUp.style.display = 'none';
-});
-
-
-document.getElementById('video_link').addEventListener('click', function () {
-  window.open('https://youtu.be/uK2WbyJx-c4', '_blank');
-});

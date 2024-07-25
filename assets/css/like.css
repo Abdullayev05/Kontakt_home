@@ -22,7 +22,7 @@ body {
 
 header {
     background: #fff;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 3;
     padding: 0 39px 0 39px;
@@ -42,6 +42,12 @@ header ul {
     gap: 10px;
 }
 
+.down_header {
+    padding-top: 8px;
+}
+.down_header ul {
+    padding-bottom: 8px;
+}
 .down_header {
     padding-top: 8px;
 }
@@ -309,17 +315,8 @@ section button {
     justify-content: center;
     border-radius: 10px;
     height: 48px;
-    margin-top: 120px;
 }
-#empty-basket{
-    margin-top: 100px;
-}
-/* 
-.card_boxes{
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
-} */
+
 
 .cixis_icon i {
     height: 25px;
@@ -800,6 +797,9 @@ footer {
 
     .li_icon_admin {
         display: block;
+    }
+    .input_div input {
+        width: 100px;
     }
 }
 
