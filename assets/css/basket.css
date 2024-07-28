@@ -311,9 +311,11 @@ section button {
     height: 48px;
     margin-top: 120px;
 }
-#empty-basket{
+
+#empty-basket {
     margin-top: 100px;
 }
+
 /* 
 .card_boxes{
     width: 500px;
@@ -743,7 +745,19 @@ footer {
     }
 
     .input_div input {
-        width: 220px;
+        width: 200px;
+    }
+
+    .down_header_icon a:nth-child(1) {
+        display: none;
+    }
+
+    .down_header_icon a:nth-child(3) {
+        display: none;
+    }
+
+    .line_icon {
+        display: none;
     }
 
     .swiper1 {
@@ -787,6 +801,10 @@ footer {
     .li_icon_admin {
         display: block;
     }
+
+    .input_div input {
+        width: 180px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -800,6 +818,15 @@ footer {
 
     .li_icon_admin {
         display: block;
+    }
+
+    .input_div input {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card_boxes button {
+        margin-top: 20px;
     }
 }
 
