@@ -1459,10 +1459,10 @@ li:hover .list_satis {
 
 }
 
-.satis_buttons {
+/* .satis_buttons {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .card .one_price {
     color: #FF0000;
@@ -1761,9 +1761,8 @@ footer {
         height: 768px;
     }
 
-    .satis_buttons div {
+    .satis_buttons {
         display: flex;
-        overflow: scroll;
     }
 
     #two_section .card {
@@ -1840,10 +1839,6 @@ footer {
         border-radius: 10px;
     }
 
-    .mySwiper {
-
-    }
-
     .one_section #center img {
         width: 425px;
         height: 425px;
@@ -1884,12 +1879,13 @@ footer {
         width: 350px;
     }
 
-    .satis_buttons {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        display: flex;
+    .satis_buttons .buttonlar {
+        flex-direction: row; /* Yan-yana sıralama */
     }
 
+    .satis_buttons .buttonlar div {
+        flex: 1 0 45%; /* Hər düymə ekranın təxminən yarısını əhatə edəcək */
+    }
     .modal {
         display: none;
         position: fixed;
@@ -1920,9 +1916,29 @@ footer {
     footer {
         width: 422px;
     }
-    .card_boxes button{
+
+    .card_boxes button {
         margin-top: 60px;
     }
+
+    .pop_up {
+        margin-right: 100px;
+    }
+
+    .modal-content {
+         width: 250px;
+    }
+
+    .popup-content {
+        width: 200px;
+        height: 500px;
+    }
+
+    .odenis_usullari {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -1982,7 +1998,6 @@ footer {
 
     footer {
         width: 465px;
-
     }
 }
 

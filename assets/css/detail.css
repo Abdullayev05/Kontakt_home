@@ -257,6 +257,7 @@ header ul {
     width: 100%;
     background: #eaeaea;
 }
+
 /* #toggleButton {} */
 .pop_up p {
     font-size: 14px;
@@ -391,7 +392,7 @@ input[type="email"] {
     cursor: pointer;
 }
 
-.btn_div_modal2{
+.btn_div_modal2 {
     border: 0;
     width: 79px;
     height: 37px;
@@ -402,7 +403,7 @@ input[type="email"] {
     background-color: #f3f3f3;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .modal-content {
@@ -414,10 +415,12 @@ input[type="email"] {
     height: 200px;
     overflow-y: auto;
 }
-.btn_admin_divs{
+
+.btn_admin_divs {
     display: flex;
     margin-top: 20px;
 }
+
 .modal-content div a span {
     line-height: 30px;
 }
@@ -528,6 +531,7 @@ input[type="email"] {
     width: 751px;
     margin-left: 80px;
 }
+
 .input_div input:hover {
     background: white;
     border: 1px solid black;
@@ -961,10 +965,12 @@ footer {
     gap: 10px;
     margin-top: 10px;
 }
+
 .zemanet_plus div {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
+
 .zemanet_plus input[type="checkbox"] {
     width: 20px;
     height: 20px;
@@ -1190,9 +1196,9 @@ footer {
         height: 768px;
     }
 
-    .satis_buttons div {
+    .satis_buttons{
         display: flex;
-        overflow: scroll;
+      
     }
 
     #two_section .card {
@@ -1203,41 +1209,50 @@ footer {
     .li_icon_admin {
         display: block;
     }
+
     .img_product {
         display: flex;
         flex-direction: column;
     }
+
     .product_img_left_div {
         width: 700px;
         height: 300px;
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
     }
+
     .product_img_left_div img {
         width: 200px;
         height: 200px;
     }
-    .product_name{
+
+    .product_name {
         height: 50px;
         width: 700px;
         display: flex;
         align-items: center;
     }
-    .product_name h3:nth-child(1){
+
+    .product_name h3:nth-child(1) {
         font-size: 10px;
         width: 120px;
     }
+
     .rating label::before {
         content: '\2605';
         font-size: 20px;
     }
+
     .product_right_div {
         width: 700px;
     }
-    .down_header ul li{
+
+    .down_header ul li {
         width: 100%;
     }
+
     #myModal span {
         color: black;
     }
@@ -1289,48 +1304,74 @@ footer {
     .li_icon_admin {
         display: block;
     }
+
     .img_product {
         display: flex;
         flex-direction: column;
     }
+
     .product_img_left_div {
-        width: 400px;
+        width: 380px;
         height: 300px;
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
     }
+
+    .product_right_div {
+        width: 380px;
+    }
+
     .product_img_left_div img {
         width: 200px;
         height: 200px;
     }
-    .product_name{
+
+    .product_name {
         height: 50px;
-        width: 400px;
+        width: 380px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
-    .product_name h3:nth-child(1){
+
+    .product_name div:nth-child(3) {
+        width: 100px;
+    }
+
+    .product_name h3:nth-child(1) {
         font-size: 10px;
         width: 120px;
+        padding-top: 10px;
     }
+
+    .product_name svg {
+        height: 14px;
+        width: 14px;
+    }
+
     .rating label::before {
         content: '\2605';
-        font-size: 20px;
+        font-size: 18px;
     }
+
     .product_right_div {
-        width: 400px;
+        width: 380px;
     }
-    .down_header ul li{
-        width: 100%;
+
+    .down_header ul li {
+        width: 70%;
     }
+
     .calculator {
         width: 100%;
     }
+
     .calculator .krediButton {
         width: 30px;
         height: 30px;
     }
+
     .modal {
         display: none;
         position: fixed;
@@ -1341,6 +1382,7 @@ footer {
         /* background-color: rgb(0,0,0); 
         background-color: rgba(0,0,0,0.4);  */
     }
+
     #myModal span {
         color: black;
     }
@@ -1350,6 +1392,7 @@ footer {
         align-items: center;
         gap: 15px;
     }
+
     .modal {
         display: none;
         position: fixed;
@@ -1357,6 +1400,7 @@ footer {
         left: 30%;
         top: -4%;
     }
+    
 }
 
 @media only screen and (max-width: 375px) {
@@ -1371,6 +1415,7 @@ footer {
     .li_icon_admin {
         display: block;
     }
+
     #myModal span {
         color: black;
     }
@@ -1380,12 +1425,21 @@ footer {
         align-items: center;
         gap: 15px;
     }
+
     .modal {
         display: none;
         position: fixed;
         z-index: 1;
         left: 27%;
         top: -4%;
+    }
+
+    .three_section {
+        width: 420px;
+    }
+
+    footer {
+        width: 420px;
     }
 }
 
@@ -1401,6 +1455,7 @@ footer {
     .li_icon_admin {
         display: block;
     }
+
     #myModal span {
         color: black;
     }
